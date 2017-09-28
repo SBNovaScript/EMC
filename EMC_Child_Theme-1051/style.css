@@ -1,0 +1,191 @@
+/*
+Theme Name:     EMC_Theme
+Theme URI:      http: //www.presscoders.com/designfolio
+Description:    Child theme for the 2017 theme
+Author:         Amelia Payne
+Author URI:     
+Template:       twentyseventeen
+Version:        0.1.0
+*/
+@import url("../twentyseventeen/style.css");
+body{
+	color:#5A5555;
+}
+
+/** FOOTER CSS **/
+
+/*The footer uses flex box layout to have 3 columbs, 2 fixed, on resizes based on screen size*/
+
+/*This section will be used by default and on tiny screens */
+
+.footer {
+    width: 100%;
+    margin-left:0;
+    background-color:#1E1919;
+    color:white;
+    display:block;
+}
+ 
+.varible-col {
+    display:none;
+}
+.wrap1{
+	width:100%;
+}
+
+.final-item{
+ padding-bottom:30px;
+}
+
+.fixed-col {
+    width:70%;
+    margin-left:15%;
+}
+
+/*Styles links*/
+.fixed-col a{
+  color:white;
+  text-decoration:none;
+  
+}
+
+
+.varible-col img{
+  max-width:200px; 
+  
+}
+
+
+/*When screen is greater then 768px */
+@media screen and (min-width: 768px) {
+.footer {
+  width: 70%;
+	margin-left:15%;
+  display:flex;
+ }
+}
+
+/*When screen is greater then 480px */
+@media screen and (min-width: 650px) {
+   .varible-col {
+    flex: 1 auto; /*Lets this colum resize based on screen*/
+    display: flex;
+	/*Center horozontally and vertically*/
+    justify-content: center; 
+    align-items: center; 
+	}
+	.footer {
+		display:flex;
+	}
+ 
+	.fixed-col {
+		max-width: 200px; /*control how big it can get while letting it shrink on smaller screens*/
+		padding:15px;
+		padding-top:15;
+		padding-right:0;
+		margin-left:30px;
+}
+
+}
+
+
+
+
+footer{
+	width:100%;	
+	background-color:#1E1919;
+}   
+
+
+
+/**CSS FOR 3 COLUMB PROJECT LAYOUT */
+#three_col_layout{
+	width:70%;
+	margin-left:15%;
+	margin-right:15%;
+	margin-bottom:200px;
+	margin-top:200px;
+	font-family: Verdana,sans-serif;
+}
+#three_col_layout h1{
+	font-family: "Segoe UI", Arial, sans-serif;
+}
+
+.col{
+	min-width:30%;
+}
+
+.date{
+	font-size:.75em;
+}
+
+
+
+
+/** CSS FOR WORD BAR **/
+#EII_bar{
+  font-family: sans-serif;
+  font-size:20px;
+  text-align:center;
+  margin-top:40px;
+  margin-bottom:40px;
+}
+
+#EII_bar h1{
+	margin-bottom:100px;
+	margin-top:100px;
+}
+
+.word{
+  padding:30px;
+  background-color:#528BB9;
+  display:inline-block;
+  text-decoration:  none;
+  color:white;
+}
+
+.word:hover{
+  outline:1px solid #B3B3B3;
+  color:white;
+}
+
+#block2{
+  margin-left:5%;
+  margin-right:5%;
+  background-color:#58C3EB;
+}
+#block3{
+  background-color:#ED686B;
+}
+
+.big_text{
+	color:black;
+	font-size: 75px;
+	
+}
+/** Pink Box code **/
+#pink_block{
+  background-color:#FF7869;
+  width: 100%;
+  height:500px;
+  color:white;
+  text-align:center;
+}
+
+#pink_block_content{
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+#pink_block a{
+  text-decoration:underline;
+  color:white;
+  font-size:20px;
+}
+
+.big_text2{
+  font-size: 75px;
+  text-align:center;
+  vertical-align:center;
+}
+
