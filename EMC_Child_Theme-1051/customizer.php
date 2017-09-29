@@ -23,6 +23,10 @@ function emc_customizer( $wp_customize ){
   $wp_customize->add_setting( 'tagline2', array(
     'default' => __('Another great tag line for the EMC', 'emc_amelia')
   ) );
+  
+  $wp_customize->add_setting( 'tagline3', array(
+    'default' => __('This is a test setting.', 'emc_steven')
+  ) );
 
   
   // Control
@@ -37,6 +41,13 @@ function emc_customizer( $wp_customize ){
     'label'    => __( 'Tagline 2', 'emc_amelia' ),
     'section'  => 'homeText',
     'settings' => 'tagline2',
+    'type'     => 'text'
+  ) );
+  
+  $wp_customize->add_control( 'tagline3', array(
+    'label'    => __( 'Tagline 2', 'emc_steven' ),
+    'section'  => 'homeText',
+    'settings' => 'tagline3',
     'type'     => 'text'
   ) );
   
