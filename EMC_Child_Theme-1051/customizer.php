@@ -13,6 +13,8 @@ function emc_customizer( $wp_customize ){
     'title'      => __('Home Page Text', 'emc_amelia'),
     'priority'   => 1
   ) );
+  
+  
 
   // Setting
   $wp_customize->add_setting( 'tagline1', array(
@@ -24,9 +26,7 @@ function emc_customizer( $wp_customize ){
     'default' => __('Another great tag line for the EMC', 'emc_amelia')
   ) );
   
-  $wp_customize->add_setting( 'tagline3', array(
-    'default' => __('This is a test setting.', 'emc_steven')
-  ) );
+  
 
   
   // Control
@@ -44,13 +44,50 @@ function emc_customizer( $wp_customize ){
     'type'     => 'text'
   ) );
   
-  $wp_customize->add_control( 'tagline3', array(
-    'label'    => __( 'Tagline 2', 'emc_steven' ),
-    'section'  => 'homeText',
-    'settings' => 'tagline3',
+  
+  
+  /*Costomise Text in projects */
+  
+  //Section
+  $wp_customize->add_section( 'projectText', array(
+    'title'      => __('Project Text', 'emc_steven'),
+    'priority'   => 1
+  ) );
+  
+  //Setting
+  $wp_customize->add_setting( 'project1', array(
+    'default' => __('Example text for this project.', 'emc_steven')
+  ) );
+  
+  $wp_customize->add_setting( 'project2', array(
+    'default' => __('Example text for this project.', 'emc_steven')
+  ) );
+  
+  $wp_customize->add_setting( 'project3', array(
+    'default' => __('Example text for this project.', 'emc_steven')
+  ) );
+  
+  //Control
+  $wp_customize->add_control( 'project1', array(
+    'label'    => __( 'Project Description 1', 'emc_steven' ),
+    'section'  => 'projectText',
+    'settings' => 'project1',
     'type'     => 'text'
   ) );
   
+  $wp_customize->add_control( 'project2', array(
+    'label'    => __( 'Project Description 2', 'emc_steven' ),
+    'section'  => 'projectText',
+    'settings' => 'project2',
+    'type'     => 'text'
+  ) );
+  
+  $wp_customize->add_control( 'project3', array(
+    'label'    => __( 'Project Description 3', 'emc_steven' ),
+    'section'  => 'projectText',
+    'settings' => 'project3',
+    'type'     => 'text'
+  ) );
   
   /*Costomise Text in footer */
   
