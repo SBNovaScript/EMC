@@ -23,7 +23,9 @@ function emc_customizer( $wp_customize ){
   
   // Setting
   $wp_customize->add_setting( 'tagline2', array(
-    'default' => __('Another great tag line for the EMC', 'emc_amelia')
+    'default' => __('Another great tag line for the EMC', 'emc_amelia'),
+    'transport'   => 'postMessage'
+
   ) );
   
   
@@ -218,6 +220,24 @@ function emc_customizer( $wp_customize ){
   
  
 }
+
+/**
+ * Used by hook: 'customize_preview_init'
+ * 
+ * @see add_action('customize_preview_init',$func)
+ */
+ 
+ add_action( 'customize_preview_init', 'cd_costomizer' );
+function cd_costomizer(){
+	wp_enqueue_script( 
+		  'mytheme-themecustomizer',			//Give the script an ID
+		  get_template_directory_uri().'/js/costomize-preview.js',//Point to file
+		  array( 'jquery','customize-preview' ),	//Define dependencies
+		  '',						//Define a version (optional) 
+		  true						//Put script in footer?
+	);
+}
+
 
 add_action( 'customize_register', 'emc_customizer' );
 
