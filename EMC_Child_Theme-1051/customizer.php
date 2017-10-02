@@ -13,6 +13,8 @@ function emc_customizer( $wp_customize ){
     'title'      => __('Home Page Text', 'emc_amelia'),
     'priority'   => 1
   ) );
+  
+  
 
   // Setting
   $wp_customize->add_setting( 'tagline1', array(
@@ -23,6 +25,8 @@ function emc_customizer( $wp_customize ){
   $wp_customize->add_setting( 'tagline2', array(
     'default' => __('Another great tag line for the EMC', 'emc_amelia')
   ) );
+  
+  
 
   
   // Control
@@ -39,6 +43,128 @@ function emc_customizer( $wp_customize ){
     'settings' => 'tagline2',
     'type'     => 'text'
   ) );
+  
+  
+  
+  /*Costomise Text in projects */
+  
+  //Section
+  $wp_customize->add_section( 'projectText', array(
+    'title'      => __('Project Text', 'emc_steven'),
+    'priority'   => 1
+  ) );
+  
+  //Settings for descriptions
+  $wp_customize->add_setting( 'project1', array(
+    'default' => __('Example text for this project.', 'emc_steven')
+  ) );
+  
+  $wp_customize->add_setting( 'project2', array(
+    'default' => __('Example text for this project.', 'emc_steven')
+  ) );
+  
+  $wp_customize->add_setting( 'project3', array(
+    'default' => __('Example text for this project.', 'emc_steven')
+  ) );
+  
+  //Settings for titles
+  $wp_customize->add_setting( 'project1Title', array(
+    'default' => __('Title 1', 'emc_steven')
+  ) );
+  
+  $wp_customize->add_setting( 'project2Title', array(
+    'default' => __('Title 2', 'emc_steven')
+  ) );
+  
+  $wp_customize->add_setting( 'project3Title', array(
+    'default' => __('Title 3', 'emc_steven')
+  ) );
+  
+  //Settings for Dates
+  
+  $wp_customize->add_setting( 'project1Date', array(
+    'default' => __('2017', 'emc_steven')
+  ) );
+  
+  $wp_customize->add_setting( 'project2Date', array(
+    'default' => __('2018', 'emc_steven')
+  ) );
+  
+  $wp_customize->add_setting( 'project3Date', array(
+    'default' => __('2019', 'emc_steven')
+  ) );
+  
+  //Controls
+  
+  //Project 1
+  $wp_customize->add_control( 'project1Title', array(
+    'label'    => __( 'Project 1 Title', 'emc_steven' ),
+    'section'  => 'projectText',
+    'settings' => 'project1Title',
+    'type'     => 'text'
+  ) );
+  $wp_customize->add_control( 'project1Date', array(
+    'label'    => __( 'Project 1 Date', 'emc_steven' ),
+    'section'  => 'projectText',
+    'settings' => 'project1Date',
+    'type'     => 'text'
+  ) );
+  $wp_customize->add_control( 'project1', array(
+    'label'    => __( 'Project 1 Description', 'emc_steven' ),
+    'section'  => 'projectText',
+    'settings' => 'project1',
+    'type'     => 'text'
+  ) );
+  
+  
+  
+  
+  //Project 2
+  $wp_customize->add_control( 'project2Title', array(
+    'label'    => __( 'Project 2 Title', 'emc_steven' ),
+    'section'  => 'projectText',
+    'settings' => 'project2Title',
+    'type'     => 'text'
+  ) );
+  $wp_customize->add_control( 'project2Date', array(
+    'label'    => __( 'Project 2 Date', 'emc_steven' ),
+    'section'  => 'projectText',
+    'settings' => 'project2Date',
+    'type'     => 'text'
+  ) );
+  $wp_customize->add_control( 'project2', array(
+    'label'    => __( 'Project 2 Description', 'emc_steven' ),
+    'section'  => 'projectText',
+    'settings' => 'project2',
+    'type'     => 'text'
+  ) );
+  
+  
+  
+  
+  
+  //Project 3
+  $wp_customize->add_control( 'project3Title', array(
+    'label'    => __( 'Project 3 Title', 'emc_steven' ),
+    'section'  => 'projectText',
+    'settings' => 'project3Title',
+    'type'     => 'text'
+  ) );
+  $wp_customize->add_control( 'project3Date', array(
+    'label'    => __( 'Project 3 Date', 'emc_steven' ),
+    'section'  => 'projectText',
+    'settings' => 'project3Date',
+    'type'     => 'text'
+  ) );
+  $wp_customize->add_control( 'project3', array(
+    'label'    => __( 'Project 3 Description', 'emc_steven' ),
+    'section'  => 'projectText',
+    'settings' => 'project3',
+    'type'     => 'text'
+  ) );
+  
+  
+  
   
   
   /*Costomise Text in footer */
