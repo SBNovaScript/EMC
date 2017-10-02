@@ -8,6 +8,7 @@ Template:       twentyseventeen
 Version:        0.1.0
 */
 
+/*original theme*/
 html {
 	font-family: sans-serif;
 	line-height: 1.15;
@@ -4241,6 +4242,8 @@ object {
 body{
 	color:#5A5555;
 }
+
+/*End of Parent CSS*/
 
 /** FOOTER CSS **/
 
