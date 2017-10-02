@@ -6,19 +6,19 @@
 <div class="w3-cell-row abc">
   <div class="w3-container w3-cell w3-cell-top w3-mobile col">
     <img src="https://www.smashingmagazine.com/wp-content/uploads/2015/06/10-dithering-opt.jpg">
-    <h1>Project Title <span class="date">(2017)</span></h1>
+    <h1><?php echo get_theme_mod('project1Title') ?> <span class="date">(<?php echo get_theme_mod('project1Date') ?>)</span></h1>
     <p><?php echo get_theme_mod('project1')?></p>
   </div>
   
   <div class="w3-container w3-mobile w3-cell col">
   <img src="https://www.smashingmagazine.com/wp-content/uploads/2015/06/10-dithering-opt.jpg">
-  <h1>Champbot <span class="date">(2016)</span></h1>
+  <h1> <?php echo get_theme_mod('project2Title') ?> <span class="date">(<?php echo get_theme_mod('project2Date') ?>)</span></h1>
     <p><?php echo get_theme_mod('project2')?></p>
   </div>
   
   <div class="w3-container w3-mobile w3-cell col">
   <img src="https://www.smashingmagazine.com/wp-content/uploads/2015/06/10-dithering-opt.jpg">
-  <h1>Breakaway <span class="date">(2017)</span></h1>
+  <h1><?php echo get_theme_mod('project3Title') ?> <span class="date">(<?php echo get_theme_mod('project3Date') ?>)</span></h1>
     <p><?php echo get_theme_mod('project3')?></p>
   </div>
 </div>
