@@ -41,16 +41,61 @@
 </nav><!-- #site-navigation -->
 
 <script>
+var navWidth= "100%";
+var darkWidth = "100%";
+var isOpen = false;
+
+
+//This function opens the menu to diffrent widths based on screen size. It basically uses meta querys
+//TODO We might want to implement code to dinamically resize as the window changes, right now it only checks size when menu opens
 function openNav() {
+	isOpen = true;
+	if (window.matchMedia('(max-width: 500px)').matches){
+		console.log("Less then 500px");
+		navWidth = "100%";
+		darkWidth = "0";
+	}else if(window.matchMedia('(max-width: 900px)').matches){
+		console.log("Less then 900px");
+		navWidth = "50%";
+	}
+	else{
+		navWidth = "25%";
+				console.log("Greater then 900");
+	}
 	
-	//Set the width for the dark mask and the menu so they appear
-    document.getElementById("mySidenav").style.width = "25%";
-	document.getElementById("darkMask").style.width = "100%";
+		console.log("meunu opwn");
+		document.getElementById("mySidenav").style.width = navWidth;
+		document.getElementById("darkMask").style.width = darkWidth;
 }
 
 function closeNav() {
+	isOpen = false;
 	//reset the width back to tiny so they dissippear
     document.getElementById("mySidenav").style.width = "0";
 	document.getElementById("darkMask").style.width = "0";
+}
+
+window.onresize = resize;
+
+//May not be the most effecent way, but this function lets the menu dinamically resize when window resizes
+function resize() {
+    if(isOpen){
+		if (window.matchMedia('(max-width: 500px)').matches){
+		console.log("Less then 500px");
+		navWidth = "100%";
+		darkWidth = "0";
+	}else if(window.matchMedia('(max-width: 900px)').matches){
+		console.log("Less then 900px");
+		navWidth = "50%";
+	}
+	else{
+		navWidth = "25%";
+				console.log("Greater then 900");
+	}
+	
+		console.log("meunu opwn");
+		document.getElementById("mySidenav").style.width = navWidth;
+		document.getElementById("darkMask").style.width = darkWidth;
+	}
 }
 </script>

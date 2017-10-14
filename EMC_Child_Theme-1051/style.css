@@ -1314,7 +1314,7 @@ a:hover .nav-title,
 .main-navigation .menu-item-has-children > a > .icon,
 .main-navigation .page_item_has_children > a > .icon,
 .main-navigation ul a > .icon {
-	display: none;
+	display: block;
 }
 
 .main-navigation > div > ul {
@@ -1342,7 +1342,6 @@ a:hover .nav-title,
 }
 
 .main-navigation li {
-	border-bottom: 1px solid #eee;
 	position: relative;
 }
 
@@ -1613,7 +1612,8 @@ body:not(.title-tagline-hidden) .site-branding-text {
 }
 
 .custom-header-media {
-	bottom: 0;
+	/*This line was causing it to break the menu for some reaseon */
+	/*bottom: 0;*/
 	left: 0;
 	overflow: hidden;
 	position: absolute;
@@ -4245,6 +4245,9 @@ body{
 
 /*End of Parent CSS*/
 
+
+
+
 /** FOOTER CSS **/
 
 /*The footer uses flex box layout to have 3 columbs, 2 fixed, on resizes based on screen size*/
@@ -4525,12 +4528,24 @@ footer{
 
 
 
+/*Stop the play pause button from displaying on the video header (This can't be removed in HTML since it is built into wordpress)*/
+#wp-custom-header-video-button {
+    display: none;
+  }
 
+/*Style for projects slider */
+.carousel-control.left, .carousel-control.right {
+   background-image:none !important;
+   filter:none !important;
+}
 
-
-
-
-
+/*Style for 3 by 3 project grid*/
+.col-sm-4 p{
+  max-width:300px;
+}
+.row{
+  margin-top:30px;
+}
 
 
 
