@@ -20,7 +20,7 @@
 ?>
 <nav id="site-navigation" class="main-navigation" role="navigation" aria-label="<?php esc_attr_e( 'Top Menu', 'twentyseventeen' ); ?>">
 
-<span class="slideOutIcon" style="font-size:30px;cursor:pointer;color:black" onclick="openNav()">&#9776;</span> <!--makes pull out menu bars-->
+<span class="slideOutIcon" style="cursor:pointer;" onclick="openNav()">&#9776;</span> <!--makes pull out menu bars-->
 
 <span id = "title">Emergent Media Center</span>
 
