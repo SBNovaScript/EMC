@@ -1,4 +1,3 @@
-
 <!--TODO: make darkness fade in -->
 <?php
 /**
@@ -21,10 +20,18 @@
 ?>
 <nav id="site-navigation" class="main-navigation" role="navigation" aria-label="<?php esc_attr_e( 'Top Menu', 'twentyseventeen' ); ?>">
 
-<span class="slideOutIcon" style="font-size:30px;cursor:pointer;color:black" onclick="openNav()">&#9776;</span> <!--makes pull out menu bars-->
-	
+<span class="slideOutIcon" style="cursor:pointer;" onclick="openNav()">&#9776;</span> <!--makes pull out menu bars-->
+
+<span id = "title">Emergent Media Center</span>
+
+<div id="EII_bar_nav">
+<a class="word" id="block1" href="#">EMERGE</a>
+<a class="word" id="block2" href="#">INNOVATE</a>
+<a class="word" id="block3" href="#">INSPIRE</a>
+</div>
 <!--TODO: I have no idea why commenting out the old menu icon makes the page discription collapse, probbly something with spacing-->
 <div id="mySidenav" class="sidenav"><!--This div is what slides out -->
+
 <a href="javascript:void(0)" id="closeNav" class="closebtn" onclick="closeNav()">&times;</a> <!--makes the little x simbol-->
 	<?php wp_nav_menu( array(
 	
@@ -97,5 +104,7 @@ function resize() {
 		document.getElementById("mySidenav").style.width = navWidth;
 		document.getElementById("darkMask").style.width = darkWidth;
 	}
+	
+	
 }
 </script>

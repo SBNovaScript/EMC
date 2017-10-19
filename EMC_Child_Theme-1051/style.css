@@ -4546,6 +4546,87 @@ footer{
 .row{
   margin-top:30px;
 }
+.projects-page img{
+	margin-top:30px;
+}
+
+.projects-page h2{
+	padding-top:0px;
+}
 
 
+/*Navagation for subpages style */
+.main-navigation .word{
+	display:inline-block;
+	padding-left:4%;
+	padding-right: 4%;
+	padding-top:8px;
+	padding-bottom:8px;
+	font-size:16px;
+	color:white;
+	
+}
+.main-navigation #block2{
+	margin-left:1%;
+	margin-right:1%;
+}
+
+.main-navigation #title{
+	font-size:24px;
+	font-weight:bold;
+	margin-left:3%;
+	margin-right:3%;
+	color:#2f2f30;
+}
+
+#EII_bar_nav{
+	display:inline;
+	margin-left:5%;
+}
+
+.slideOutIcon{
+	color:#535354;
+	font-weight:bold;
+	font-size:40px;
+	line-height: 50px;
+}
+.sub-page-header{
+	margin-top:60px;
+}
+
+/*It may not be elegent but this morass of meta querys fixes a couple of nasty issues that occor on smaller screens*/
+
+@media screen and (max-width: 998px) {
+	/*This one just changes the spacing and element sizes so the layout works a bit longer*/
+	#EII_bar_nav{
+		margin-left:1%;
+	}
+	.main-navigation #title{
+		margin-left:1%;
+		margin-right:1%;
+	}
+
+}
+@media screen and (max-width: 790px) {
+	/*This moves the menu into the mobil configuration and adds double top margin becouse of an error that causes menu to appear off screen*/
+	#EII_bar_nav{
+		display:block;
+		text-align:center;
+		margin-top:15px;
+	}
+	.main-navigation #title{
+		text-align:center;
+}
+	.sub-page-header{
+	margin-top:120px;
+}
+
+}
+@media screen and (max-width: 767px) {
+	/*This removes the extra spacing since the themes default spacing has kicked in at this point and the extra space is no longer nessary*/
+	.sub-page-header{
+		margin-top:0px;
+	}
+
+}
 

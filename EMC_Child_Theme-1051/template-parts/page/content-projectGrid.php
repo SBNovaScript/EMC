@@ -3,7 +3,7 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
   
-  <div class="container-fluid">
+  <div class="container-fluid projects-page">
 <h1>Projects:</h1>
 <div class="row">
 <div class="col-sm-4">
