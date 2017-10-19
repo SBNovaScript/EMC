@@ -4547,5 +4547,29 @@ footer{
   margin-top:30px;
 }
 
+/*Navagation for subpages style */
+.main-navigation .word{
+	display:inline-block;
+	padding-left:40px;
+	padding-right: 40px;
+	padding-top:5px;
+	padding-bottom:5px;
+	font-size:16px;
+	color:white;
+	
+}
+.main-navigation #block2{
+	margin-left:2.5%;
+	margin-right:2.5%;
+}
 
+.main-navigation #title{
+	font-size:20px;
+	font-weight:bold;
+	margin-left:5%;
+	margin-right:5%;
+}
 
+#EII_bar_nav{
+	display:inline;
+}
