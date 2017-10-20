@@ -10,7 +10,7 @@ function emc_customizer( $wp_customize ){
 /** Costomize text on home page */
   // Section
   $wp_customize->add_section( 'homeText', array(
-    'title'      => __('Home Page Text', 'emc_amelia'),
+    'title'      => __('Home Page Text', 'EMC_Theme'),
     'priority'   => 1
   ) );
   
@@ -18,12 +18,12 @@ function emc_customizer( $wp_customize ){
 
   // Setting
   $wp_customize->add_setting( 'tagline1', array(
-    'default' => __('Great tagline for EMC goes here', 'emc_amelia')
+    'default' => __('Great tagline for EMC goes here', 'EMC_Theme')
   ) );
   
   // Setting
   $wp_customize->add_setting( 'tagline2', array(
-    'default' => __('Another great tag line for the EMC', 'emc_amelia'),
+    'default' => __('Another great tag line for the EMC', 'EMC_Theme'),
     'transport'   => 'postMessage'
 
   ) );
@@ -33,14 +33,14 @@ function emc_customizer( $wp_customize ){
   
   // Control
   $wp_customize->add_control( 'tagline1', array(
-    'label'    => __( 'Tagline 1', 'emc_amelia' ),
+    'label'    => __( 'Tagline 1', 'EMC_Theme' ),
     'section'  => 'homeText',
     'settings' => 'tagline1',
     'type'     => 'text'
   ) );
 
    $wp_customize->add_control( 'tagline2', array(
-    'label'    => __( 'Tagline 2', 'emc_amelia' ),
+    'label'    => __( 'Tagline 2', 'EMC_Theme' ),
     'section'  => 'homeText',
     'settings' => 'tagline2',
     'type'     => 'text'
@@ -52,67 +52,67 @@ function emc_customizer( $wp_customize ){
   
   //Section
   $wp_customize->add_section( 'projectText', array(
-    'title'      => __('Project Text', 'emc_steven'),
+    'title'      => __('Project Text', 'EMC_Theme'),
     'priority'   => 1
   ) );
   
   //Settings for descriptions
   $wp_customize->add_setting( 'project1', array(
-    'default' => __('Example text for this project.', 'emc_steven')
+    'default' => __('Example text for this project.', 'EMC_Theme')
   ) );
   
   $wp_customize->add_setting( 'project2', array(
-    'default' => __('Example text for this project.', 'emc_steven')
+    'default' => __('Example text for this project.', 'EMC_Theme')
   ) );
   
   $wp_customize->add_setting( 'project3', array(
-    'default' => __('Example text for this project.', 'emc_steven')
+    'default' => __('Example text for this project.', 'EMC_Theme')
   ) );
   
   //Settings for titles
   $wp_customize->add_setting( 'project1Title', array(
-    'default' => __('Title 1', 'emc_steven')
+    'default' => __('Title 1', 'EMC_Theme')
   ) );
   
   $wp_customize->add_setting( 'project2Title', array(
-    'default' => __('Title 2', 'emc_steven')
+    'default' => __('Title 2', 'EMC_Theme')
   ) );
   
   $wp_customize->add_setting( 'project3Title', array(
-    'default' => __('Title 3', 'emc_steven')
+    'default' => __('Title 3', 'EMC_Theme')
   ) );
   
   //Settings for Dates
   
   $wp_customize->add_setting( 'project1Date', array(
-    'default' => __('2017', 'emc_steven')
+    'default' => __('2017', 'EMC_Theme')
   ) );
   
   $wp_customize->add_setting( 'project2Date', array(
-    'default' => __('2018', 'emc_steven')
+    'default' => __('2018', 'EMC_Theme')
   ) );
   
   $wp_customize->add_setting( 'project3Date', array(
-    'default' => __('2019', 'emc_steven')
+    'default' => __('2019', 'EMC_Theme')
   ) );
   
   //Controls
   
   //Project 1
   $wp_customize->add_control( 'project1Title', array(
-    'label'    => __( 'Project 1 Title', 'emc_steven' ),
+    'label'    => __( 'Project 1 Title', 'EMC_Theme' ),
     'section'  => 'projectText',
     'settings' => 'project1Title',
     'type'     => 'text'
   ) );
   $wp_customize->add_control( 'project1Date', array(
-    'label'    => __( 'Project 1 Date', 'emc_steven' ),
+    'label'    => __( 'Project 1 Date', 'EMC_Theme' ),
     'section'  => 'projectText',
     'settings' => 'project1Date',
     'type'     => 'text'
   ) );
   $wp_customize->add_control( 'project1', array(
-    'label'    => __( 'Project 1 Description', 'emc_steven' ),
+    'label'    => __( 'Project 1 Description', 'EMC_Theme' ),
     'section'  => 'projectText',
     'settings' => 'project1',
     'type'     => 'text'
@@ -123,19 +123,19 @@ function emc_customizer( $wp_customize ){
   
   //Project 2
   $wp_customize->add_control( 'project2Title', array(
-    'label'    => __( 'Project 2 Title', 'emc_steven' ),
+    'label'    => __( 'Project 2 Title', 'EMC_Theme' ),
     'section'  => 'projectText',
     'settings' => 'project2Title',
     'type'     => 'text'
   ) );
   $wp_customize->add_control( 'project2Date', array(
-    'label'    => __( 'Project 2 Date', 'emc_steven' ),
+    'label'    => __( 'Project 2 Date', 'EMC_Theme' ),
     'section'  => 'projectText',
     'settings' => 'project2Date',
     'type'     => 'text'
   ) );
   $wp_customize->add_control( 'project2', array(
-    'label'    => __( 'Project 2 Description', 'emc_steven' ),
+    'label'    => __( 'Project 2 Description', 'EMC_Theme' ),
     'section'  => 'projectText',
     'settings' => 'project2',
     'type'     => 'text'
@@ -147,19 +147,19 @@ function emc_customizer( $wp_customize ){
   
   //Project 3
   $wp_customize->add_control( 'project3Title', array(
-    'label'    => __( 'Project 3 Title', 'emc_steven' ),
+    'label'    => __( 'Project 3 Title', 'EMC_Theme' ),
     'section'  => 'projectText',
     'settings' => 'project3Title',
     'type'     => 'text'
   ) );
   $wp_customize->add_control( 'project3Date', array(
-    'label'    => __( 'Project 3 Date', 'emc_steven' ),
+    'label'    => __( 'Project 3 Date', 'EMC_Theme' ),
     'section'  => 'projectText',
     'settings' => 'project3Date',
     'type'     => 'text'
   ) );
   $wp_customize->add_control( 'project3', array(
-    'label'    => __( 'Project 3 Description', 'emc_steven' ),
+    'label'    => __( 'Project 3 Description', 'EMC_Theme' ),
     'section'  => 'projectText',
     'settings' => 'project3',
     'type'     => 'text'
@@ -173,7 +173,7 @@ function emc_customizer( $wp_customize ){
   
    // Section
   $wp_customize->add_section( 'footerText', array(
-    'title'      => __('Footer Text', 'emc_amelia'),
+    'title'      => __('Footer Text', 'EMC_Theme'),
     'priority'   => 1
   ) );
 
@@ -187,12 +187,12 @@ function emc_customizer( $wp_customize ){
         Champlain College<br> 
 		802-856-8438<br>
 		<a href ="#"> ktracy@champlain.edu</a>', 
-		'emc_amelia')
+		'EMC_Theme')
   ) );
   
     //control
  $wp_customize->add_control( 'contactText', array(
-    'label'    => __( 'Contact Text', 'emc_amelia' ),
+    'label'    => __( 'Contact Text', 'EMC_Theme' ),
     'section'  => 'footerText',
     'settings' => 'contactText',
     'type'     => 'textarea'
@@ -207,12 +207,12 @@ function emc_customizer( $wp_customize ){
       <a href="#">Test test test test test</a>
       <a href="#">Test test test test stuff</a>',
 
-	  'emc_amelia')
+	  'EMC_Theme')
   ) );
 
 
    $wp_customize->add_control( 'partnerText', array(
-    'label'    => __( 'Partnership Text', 'emc_amelia' ),
+    'label'    => __( 'Partnership Text', 'EMC_Theme' ),
 	 'section'  => 'footerText',
     'settings' => 'partnerText',
     'type'     => 'textarea'
