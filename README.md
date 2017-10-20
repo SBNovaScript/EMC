@@ -14,6 +14,8 @@ This is the GitHub EMC Website repository. All theme files can be found under th
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;content-projectSlider.php - information about the projects page slider.  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;content-wordbar.php information about the Emerge, Innovate, and Inspire buttons.  
 
+#### non-template-parts:  
+
 &nbsp;&nbsp;&nbsp;&nbsp;customizer.php - information about custom elements added to the customizer.  
 &nbsp;&nbsp;&nbsp;&nbsp;footer.php - information about the footer links on the main page.  
 &nbsp;&nbsp;&nbsp;&nbsp;front-page.php - information about changing the main page's elements.  
