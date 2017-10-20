@@ -2,7 +2,8 @@
 This is the GitHub EMC Website repository. All theme files can be found under the main "EMC_Child_Theme-1051" folder.  
 
 #### template-parts:  
-&nbsp;&nbsp;&nbsp;&nbsp; **footer** - information about the footer of the main page.  
+======
+&nbsp;&nbsp;&nbsp;&nbsp; footer - information about the footer of the main page.  
 &nbsp;&nbsp;&nbsp;&nbsp; header - information about the header image and site branding.  
 &nbsp;&nbsp;&nbsp;&nbsp; navigation - information about the pull out menu.  
 ---
