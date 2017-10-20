@@ -4,7 +4,7 @@
 
 <div class="container-fluid projects-page"> 
 	<h1>Projects:</h1>
-	<div class="row tnail"> <!--tnail = thumbnail-->
+	<div class="row">
 	<div class="col-sm-4">
 		<img src="http://www.wellcomeimageawards.org/jpegs/58956/B0010980_main.jpg"> 
 		<h2>Project 1</h2>
