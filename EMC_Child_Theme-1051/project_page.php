@@ -23,19 +23,34 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
 		
 		<?php/*BROKEN get_template_part( 'template-parts/page/content', 'projectsSlider' ); */ ?>
-		<?php get_template_part( 'template-parts/page/content', 'projectGrid' ); ?>
+		<?php /*get_template_part( 'template-parts/page/content', 'projectGrid' );*/ ?>
 			<?php
-			/*
-			while ( have_posts() ) : the_post();
+			if (have_posts()) : while (have_posts()) : the_post();
 
-				get_template_part( 'template-parts/page/content', 'page' );
+	// are there any rows within within our flexible content?
+	if( have_rows('project_page_content') ): 
 
-				// If comments are open or we have at least one comment, load up the comment template.
-				if ( comments_open() || get_comments_number() ) :
-					comments_template();
-				endif;
+		// loop through all the rows of flexible content
+		while ( have_rows('project_page_content') ) : the_row();
 
-			endwhile; // End of the loop.*/
+		// BLOCK WITH TEXT AND LINK (Pink Block)
+		if( get_row_layout() == 'pink_block' )
+			get_template_part( 'template-parts/page/content', 'pinkBlock' );
+
+		// BLOCK WITH TEXT AND LINK
+		if( get_row_layout() == 'word_block' )
+			get_template_part( 'template-parts/page/content', 'wordbar' );
+
+		// PROJECTS GRID
+		if( get_row_layout() == 'project_grid' )
+			get_template_part( 'template-parts/page/content', 'projectGrid' );
+
+
+
+		endwhile; // close the loop of flexible content
+	endif; // close flexible content conditional
+
+endwhile; endif; // close the WordPress loop ?>
 			?>
 
 		</main><!-- #main -->

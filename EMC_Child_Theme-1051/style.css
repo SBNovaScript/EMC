@@ -4566,6 +4566,11 @@ footer{
 	color:white;
 	
 }
+.main-navigation .word:hover{
+	color:white;
+	text-decoration:none;
+}
+
 .main-navigation #block2{
 	margin-left:1%;
 	margin-right:1%;

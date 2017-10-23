@@ -2,7 +2,7 @@
 
 <div id="EII_bar">
 <h1 class="big_text">
-	 <?php echo get_theme_mod( 'tagline1'); ?>
+	 <?php echo the_sub_field('wordBar_text') ?>
 </h1>
 <a class="word" id="block1" href="#">EMERGE</a>
 <a class="word" id="block2" href="#">INNOVATE</a>
