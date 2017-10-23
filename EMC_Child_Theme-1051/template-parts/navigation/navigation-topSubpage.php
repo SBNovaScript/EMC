@@ -104,7 +104,6 @@ function resize() {
 		document.getElementById("mySidenav").style.width = navWidth;
 		document.getElementById("darkMask").style.width = darkWidth;
 	}
-	
-	
+
 }
 </script>
