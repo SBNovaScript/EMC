@@ -44,14 +44,22 @@ get_header(); ?>
 		// PROJECTS GRID
 		if( get_row_layout() == 'project_grid' )
 			get_template_part( 'template-parts/page/content', 'projectGrid' );
-
-
+		//THREE PROJECT LAYOUT
+		if( get_row_layout() == 'three_projects' )
+			get_template_part( 'template-parts/page/content', 'projects' );
+		//PHOTO GALLERY GRID
+		if( get_row_layout() == 'photo_gallery' )
+			get_template_part( 'template-parts/page/content', 'gallery' );
+		
+		//MISSION STATEMENT
+		if( get_row_layout() == 'mission_statement' )
+			get_template_part( 'template-parts/page/content', 'missionStatement' );
 
 		endwhile; // close the loop of flexible content
 	endif; // close flexible content conditional
 
 endwhile; endif; // close the WordPress loop ?>
-			?>
+			
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
