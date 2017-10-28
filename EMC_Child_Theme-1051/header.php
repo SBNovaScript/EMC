@@ -12,7 +12,10 @@
  * @version 1.0
  */
 
-?><!DOCTYPE html>
+
+?>
+<!DOCTYPE html>
+
 <html <?php language_attributes(); ?> class="no-js no-svg">
 <head>
 <meta charset="<?php bloginfo( 'charset' ); ?>">
@@ -26,16 +29,20 @@
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'twentyseventeen' ); ?></a>
 
-	<header id="masthead" class="site-header" role="banner"
-	<?php 
+
+	<header id="masthead" class="site-header 
+		<?php 
+
+
 	//This fixes the issue with the header appearing above the top of the page on subpages. 
 	//It may not be the most elegent way to do this but it's the only thing I've found that works
 	//If the page is not the front page, add an inline style to give the element a top margin of 60px ?>
 	
 <?php	if (!is_front_page() ) : ?>
-			style = "margin-top:60px;"
+
+			sub-page-header
 		<?php endif; ?>
-	>
+	" role="banner">
 
 	<!--For some reson the title and discription are linked from this file-->
 		<?php get_template_part( 'template-parts/header/header', 'image' ); ?>

@@ -23,7 +23,7 @@ get_header(); ?>
 	
 <main id="main" class="site-main" role="main">
 
-<?php get_template_part( 'template-parts/page/content', 'wordbar' ); ?>
+
 <?php // Show the selected frontpage content.
 		
 	if ( have_posts() ) :
@@ -31,7 +31,29 @@ get_header(); ?>
 		while ( have_posts() ) : the_post();
 				
 			/*get_template_part( 'template-parts/page/content', 'front-page' );*/
-	
+			if( have_rows('home_page_content') ): 
+
+					// loop through all the rows of flexible content
+					while ( have_rows('home_page_content') ) : the_row();
+
+						// BLOCK WITH TEXT AND LINK (Pink Block)
+						if( get_row_layout() == 'pink_block' )
+						get_template_part( 'template-parts/page/content', 'pinkBlock' );
+
+						// BLOCK WITH TEXT AND LINK
+						if( get_row_layout() == 'word_block' )
+							get_template_part( 'template-parts/page/content', 'wordbar' );
+
+						// PROJECTS GRID
+						if( get_row_layout() == 'project_grid' )
+							get_template_part( 'template-parts/page/content', 'projectGrid' );
+						
+						//THREE PROJECT LAYOUT
+						if( get_row_layout() == 'three_projects' )
+							get_template_part( 'template-parts/page/content', 'projects' );
+
+		endwhile; // close the loop of flexible content
+	endif; // close flexible content conditional
 			endwhile;
 		
 			else : // I'm not sure it's possible to have no posts when this page is shown, but WTH.
@@ -72,11 +94,10 @@ global $twentyseventeencounter;
 
 	
 endif; // if ( 0 !== twentyseventeen_panel_count() ) ends here. ?>
-<?php get_template_part( 'template-parts/page/content', 'projects' ); ?>
 
-<?php get_template_part( 'template-parts/page/content', 'pinkBlock' ); ?>
+
 	
 </main><!-- #main -->
 </div><!-- #primary -->
 
-<?php get_footer();
+<?php get_footer(); ?>
