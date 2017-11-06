@@ -4801,3 +4801,55 @@ color:white;
  background-color:#ED686B;
  color:white;
 }
+
+/*A block containing a large image with rounded corneres and a wysiwyg editor*/
+.picAndText{
+  width:100%;
+  border:.5px solid #c6c6c6;
+  border-radius:4px;
+  color:black;
+}
+.picAndText img{
+  width:100%;
+  border-radius:4px;
+}
+.picAndText .content{
+  width:90%;
+  margin-left:5%;
+  margin-bottom:20px;
+  margin-top:20px;
+}
+/*Mid sized text blocks that appear between other elements*/
+.midText{
+  width:60%;
+  margin-left:20%;
+  margin-top:80px;
+  margin-bottom:80px;
+
+  font-size:18px;
+}
+.midText h1{
+	  color:black;
+}
+
+.twoImages{
+  width:100%;
+}
+.twoImages div{
+  height:300px;
+  display:inline-block;
+  border-radius:4px;
+}
+.twoImages .small{
+  width:37%;
+  
+}
+.twoImages .big{
+  width:61.5%;
+}
+.twoImages img{
+  width:100%;
+  height:100%;
+  overflow:hidden;
+  border-radius:4px;
+}

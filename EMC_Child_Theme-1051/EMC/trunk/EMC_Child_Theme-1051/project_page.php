@@ -20,13 +20,13 @@ get_header(); ?>
 
 <div class="wrap">
 	<div id="primary" class="content-area">
-	
 		<main id="main" class="site-main" role="main">
+		
 		<?php/*BROKEN get_template_part( 'template-parts/page/content', 'projectsSlider' ); */ ?>
 		<?php /*get_template_part( 'template-parts/page/content', 'projectGrid' );*/ ?>
-			<?php get_template_part( 'template-parts/page/content', 'twoImages' );
+			<?php
 			if (have_posts()) : while (have_posts()) : the_post();
-get_template_part( 'template-parts/page/content', 'midText' );
+
 	// are there any rows within within our flexible content?
 	if( have_rows('project_page_content') ): 
 
@@ -54,18 +54,7 @@ get_template_part( 'template-parts/page/content', 'midText' );
 		//MISSION STATEMENT
 		if( get_row_layout() == 'mission_statement' )
 			get_template_part( 'template-parts/page/content', 'missionStatement' );
-		
-		//PIC AND TEXT BLOCK
-		if( get_row_layout() == 'pic_and_text' )
-			 get_template_part( 'template-parts/page/content', 'picAndText' ); 
-		//MID SIZED TEXT WITH LOTS OF SPACING
-		if( get_row_layout() == 'mid_text' )
-			 get_template_part( 'template-parts/page/content', 'midText' ); 
 
-		 //TWO IMAGES ON ONE LINE
-		 if( get_row_layout() == 'two_images' )
-			 get_template_part( 'template-parts/page/content', 'twoImages' ); 
-		 
 		endwhile; // close the loop of flexible content
 	endif; // close flexible content conditional
 
