@@ -6,20 +6,20 @@
 <div class="w3-cell-row abc">
   <div class="w3-container w3-cell w3-cell-top w3-mobile col">
     <img src="<?php echo the_sub_field('three_project_layout_images_one') ?>">
-    <h1><?php echo get_theme_mod('project1Title'); ?> <span class="date">(<?php echo get_theme_mod('project1Date') ?>)</span></h1>
-    <p><?php echo get_theme_mod('project1')?></p>
+    <h1><?php echo the_sub_field('three_project_one_title') ?> <span class="date">(<?php echo the_sub_field('three_project_one_date') ?>)</span></h1>
+    <p><?php echo the_sub_field('three_project_one_description') ?> </p>
   </div>
   
   <div class="w3-container w3-mobile w3-cell col">
   <img src="<?php echo the_sub_field('three_project_layout_images_two') ?>">
-  <h1> <?php echo get_theme_mod('project2Title') ?> <span class="date">(<?php echo get_theme_mod('project2Date') ?>)</span></h1>
-    <p><?php echo get_theme_mod('project2')?></p>
+  <h1> <?php echo the_sub_field('three_project_two_title') ?> <span class="date">(<?php echo the_sub_field('three_project_two_date') ?>)</span></h1>
+    <p><?php echo the_sub_field('three_project_two_description') ?></p>
   </div>
   
   <div class="w3-container w3-mobile w3-cell col">
   <img src="<?php echo the_sub_field('three_project_layout_images_three') ?>">
-  <h1><?php echo get_theme_mod('project3Title') ?> <span class="date">(<?php echo get_theme_mod('project3Date') ?>)</span></h1>
-    <p><?php echo get_theme_mod('project3')?></p>
+  <h1><?php echo the_sub_field('three_project_three_title') ?> <span class="date">(<?php echo the_sub_field('three_project_three_date') ?>)</span></h1>
+    <p><?php echo the_sub_field('three_project_three_description') ?></p>
   </div>
 </div>
 </div>

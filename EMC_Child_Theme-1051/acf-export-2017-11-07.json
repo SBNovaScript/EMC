@@ -193,6 +193,64 @@
                                 "mime_types": ""
                             },
                             {
+                                "key": "field_5a021fe632040",
+                                "label": "Project One Title",
+                                "name": "three_project_one_title",
+                                "type": "text",
+                                "value": null,
+                                "instructions": "Enter Project 1's title here.",
+                                "required": 1,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "default_value": "",
+                                "placeholder": "Title here",
+                                "prepend": "",
+                                "append": "",
+                                "maxlength": 40
+                            },
+                            {
+                                "key": "field_5a02212ba78b8",
+                                "label": "Project One Date",
+                                "name": "three_project_one_date",
+                                "type": "date_picker",
+                                "value": null,
+                                "instructions": "",
+                                "required": 1,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "display_format": "m\/d\/Y",
+                                "return_format": "m\/d\/Y",
+                                "first_day": 1
+                            },
+                            {
+                                "key": "field_5a022299dd3b6",
+                                "label": "Project One Description",
+                                "name": "three_project_one_description",
+                                "type": "text",
+                                "value": null,
+                                "instructions": "Enter description here",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "default_value": "",
+                                "placeholder": "",
+                                "prepend": "",
+                                "append": "",
+                                "maxlength": ""
+                            },
+                            {
                                 "key": "field_5a021e0bdcd85",
                                 "label": "Image Two",
                                 "name": "three_project_layout_images_two",
@@ -218,6 +276,64 @@
                                 "mime_types": ""
                             },
                             {
+                                "key": "field_5a02200932041",
+                                "label": "Project Two Title",
+                                "name": "three_project_two_title",
+                                "type": "text",
+                                "value": null,
+                                "instructions": "Enter Project 2's title here.",
+                                "required": 1,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "default_value": "",
+                                "placeholder": "Title here",
+                                "prepend": "",
+                                "append": "",
+                                "maxlength": ""
+                            },
+                            {
+                                "key": "field_5a022137a78b9",
+                                "label": "Project Two Date",
+                                "name": "three_project_two_date",
+                                "type": "date_picker",
+                                "value": null,
+                                "instructions": "",
+                                "required": 1,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "display_format": "m\/d\/Y",
+                                "return_format": "m\/d\/Y",
+                                "first_day": 1
+                            },
+                            {
+                                "key": "field_5a0222a6dd3b7",
+                                "label": "Project Two Description",
+                                "name": "three_project_two_description",
+                                "type": "text",
+                                "value": null,
+                                "instructions": "Enter description here",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "default_value": "",
+                                "placeholder": "",
+                                "prepend": "",
+                                "append": "",
+                                "maxlength": ""
+                            },
+                            {
                                 "key": "field_5a021e24dcd86",
                                 "label": "Image Three",
                                 "name": "three_project_layout_images_three",
@@ -241,6 +357,64 @@
                                 "max_height": "",
                                 "max_size": "",
                                 "mime_types": ""
+                            },
+                            {
+                                "key": "field_5a02200b32042",
+                                "label": "Project Three Title",
+                                "name": "three_project_three_title",
+                                "type": "text",
+                                "value": null,
+                                "instructions": "Enter Project 3's title here.",
+                                "required": 1,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "default_value": "",
+                                "placeholder": "Title here",
+                                "prepend": "",
+                                "append": "",
+                                "maxlength": ""
+                            },
+                            {
+                                "key": "field_5a02213da78ba",
+                                "label": "Project Three Date",
+                                "name": "three_project_three_date",
+                                "type": "date_picker",
+                                "value": null,
+                                "instructions": "",
+                                "required": 1,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "display_format": "m\/d\/Y",
+                                "return_format": "m\/d\/Y",
+                                "first_day": 1
+                            },
+                            {
+                                "key": "field_5a0222a9dd3b8",
+                                "label": "Project Three Description",
+                                "name": "three_project_three_description",
+                                "type": "text",
+                                "value": null,
+                                "instructions": "Enter description here",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "default_value": "",
+                                "placeholder": "",
+                                "prepend": "",
+                                "append": "",
+                                "maxlength": ""
                             }
                         ],
                         "min": "",
@@ -263,7 +437,7 @@
         ],
         "menu_order": 0,
         "position": "normal",
-        "style": "default",
+        "style": "seamless",
         "label_placement": "top",
         "instruction_placement": "label",
         "hide_on_screen": "",
