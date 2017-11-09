@@ -8,6 +8,8 @@ Template:       twentyseventeen
 Version:        0.1.0
 */
 
+
+
 /*original theme*/
 html {
 	font-family: sans-serif;
@@ -383,7 +385,7 @@ textarea {
 }
 
 h1,
-h2,
+/* h2 was here, taken out for projects page */
 h3,
 h4,
 h5,
@@ -449,8 +451,10 @@ h6 {
 
 p {
 	margin: 0 0 1.5em;
-	padding: 0;
+	padding: 0; 
 }
+
+
 
 dfn,
 cite,
@@ -4802,6 +4806,7 @@ color:white;
  color:white;
 }
 
+<<<<<<< HEAD
 /*A block containing a large image with rounded corneres and a wysiwyg editor*/
 .picAndText{
   width:100%;
@@ -4852,4 +4857,8 @@ color:white;
   height:100%;
   overflow:hidden;
   border-radius:4px;
+=======
+p.projectsPage {
+	padding-bottom: 2em; /*added for projects page*/
+>>>>>>> master
 }
