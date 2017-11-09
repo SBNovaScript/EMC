@@ -3,83 +3,27 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
 
-<div class="container-fluid projects-page"> 
-	<h1>Projects:</h1>
-	<div class="row">
+<?php
+
+if(have_rows('project_grid_layout') ):
+
+	while (have_rows('project_grid_layout') ): the_row();
+	
+		?>
+	
 	<div class="col-sm-4">
-		<img src="http://www.wellcomeimageawards.org/jpegs/58956/B0010980_main.jpg"> 
-		<h2>Project 1</h2>
-		<p>
-		Tip: Go to our CSS Responsive Web Design Tutorial to learn more about responsive web design and grids.
+		<img src=<?php the_sub_field('repeat_image'); ?>> 
+		<h2><?php the_sub_field('repeat_title'); ?></h2>
+		<p class="projectsPage">
+		<?php the_sub_field('repeat_text'); ?>
 		</p>
 	</div>
+		
+		<?php
+	endwhile;
+	
+else :
 
-	<div class="col-sm-4">
-		<img src="http://www.wellcomeimageawards.org/jpegs/58956/B0010980_main.jpg">
-		<h2>Project 1</h2>
-		<p>
-		Tip: Go to our CSS Responsive Web Design Tutorial to learn more about responsive web design and grids.
-		</p>
-	</div>
+endif;
 
-	<div class="col-sm-4">
-		<img src="http://www.wellcomeimageawards.org/jpegs/58956/B0010980_main.jpg">
-		<h2>Project 1</h2>
-		<p>
-		Tip: Go to our CSS Responsive Web Design Tutorial to learn more about responsive web design and grids.
-		</p>
-	</div>
-	</div>
-
-	<div class="row">
-		<div class="col-sm-4">
-			<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ87qapmgUogqbOOZpe8vOy6S62cMXaz6ly9UJJwUfkQaY01GTf0Q">
-			<h2>Project 1</h2>
-			<p>
-			Tip: Go to our CSS Responsive Web Design Tutorial to learn more about responsive web design and grids.
-			</p>
-		</div>
-
-		<div class="col-sm-4">
-			<img src="http://www.wellcomeimageawards.org/jpegs/58956/B0010980_main.jpg">
-			<h2>Project 1</h2>
-			<p>
-			Tip: Go to our CSS Responsive Web Design Tutorial to learn more about responsive web design and grids.
-			</p>
-		</div>
-
-		<div class="col-sm-4">
-			<img src="http://www.wellcomeimageawards.org/jpegs/58956/B0010980_main.jpg">
-			<h2>Project 1</h2>
-			<p>
-			Tip: Go to our CSS Responsive Web Design Tutorial to learn more about responsive web design and grids.
-			</p>
-		</div>
-	</div>
-
-	<div class="row">
-		<div class="col-sm-4">
-			<img src="http://www.wellcomeimageawards.org/jpegs/58956/B0010980_main.jpg">
-			<h2>Project 1</h2>
-			<p>
-			Tip: Go to our CSS Responsive Web Design Tutorial to learn more about responsive web design and grids.
-			</p>
-		</div>
-
-		<div class="col-sm-4">
-			<img src="http://www.wellcomeimageawards.org/jpegs/58956/B0010980_main.jpg">
-			<h2>Project 1</h2>
-			<p>
-			Tip: Go to our CSS Responsive Web Design Tutorial to learn more about responsive web design and grids.
-			</p>
-		</div>
-
-		<div class="col-sm-4">
-			<img src="http://www.wellcomeimageawards.org/jpegs/58956/B0010980_main.jpg">
-			<h2>Project 1</h2>
-			<p>
-			Tip: Go to our CSS Responsive Web Design Tutorial to learn more about responsive web design and grids.
-			</p>
-		</div>
-
-	</div>
+?>
