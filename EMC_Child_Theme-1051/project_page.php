@@ -24,14 +24,14 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
 		<?php/*BROKEN get_template_part( 'template-parts/page/content', 'projectsSlider' ); */ ?>
 		<?php /*get_template_part( 'template-parts/page/content', 'projectGrid' );*/ ?>
-			<?php get_template_part( 'template-parts/page/content', 'twoImages' );
-			if (have_posts()) : while (have_posts()) : the_post();
-get_template_part( 'template-parts/page/content', 'midText' );
+			<?php 
+if (have_posts()) : while (have_posts()) : the_post();
+		get_template_part( 'template-parts/page/content', 'video.php' );
 	// are there any rows within within our flexible content?
-	if( have_rows('project_page_content') ): 
+	if( have_rows('page_content') ): 
 
 		// loop through all the rows of flexible content
-		while ( have_rows('project_page_content') ) : the_row();
+		while ( have_rows('page_content') ) : the_row();
 
 		// BLOCK WITH TEXT AND LINK (Pink Block)
 		if( get_row_layout() == 'pink_block' )
@@ -65,6 +65,14 @@ get_template_part( 'template-parts/page/content', 'midText' );
 		 //TWO IMAGES ON ONE LINE
 		 if( get_row_layout() == 'two_images' )
 			 get_template_part( 'template-parts/page/content', 'twoImages' ); 
+		 
+		 //The Video Block 
+		 if( get_row_layout() == 'video_block' )
+			 get_template_part( 'template-parts/page/content', 'video' ); 
+		 
+		 //The Video Block 
+		 if( get_row_layout() == 'pop_out' )
+			 get_template_part( 'template-parts/page/content', 'PopOut' ); 
 		 
 		endwhile; // close the loop of flexible content
 	endif; // close flexible content conditional

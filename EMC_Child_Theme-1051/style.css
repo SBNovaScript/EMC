@@ -4844,6 +4844,7 @@ color:white;
   height:300px;
   display:inline-block;
   border-radius:4px;
+  width:49%;
 }
 .twoImages .small{
   width:37%;
@@ -4857,8 +4858,57 @@ color:white;
   height:100%;
   overflow:hidden;
   border-radius:4px;
-=======
-p.projectsPage {
+}
+
+p .projectsPage {
 	padding-bottom: 2em; /*added for projects page*/
->>>>>>> master
+}
+
+.video_block{
+	width:100%;
+}
+
+/*Styling for the anamated expander element on the project page. Its not perfect but it basically works. We might want to add some jquery later to fade in the text so its less jaring*/
+
+.four_item_expander{
+  width:100%;
+  height:500px;
+
+  vertical-align: middle;
+  display: flex;
+  align-items: center;
+      text-align: center;
+
+}
+.four_item_expander div{
+  width:25%;
+  display:inline-block;
+  vertical-align: middle;
+  -webkit-transition: width .5s; /* Safari */
+    transition: width .5s;
+}
+.four_item_expander div img{
+  width:100%;
+  -webkit-transition: width .01s; /* Safari */
+    transition: width .01s;
+    -webkit-transition: height 1s; /* Safari */
+    transition: height 1s;
+}
+.four_item_expander div .hiddenWidth{
+  width:0;
+  height:0;
+  overflow:hidden;
+  -webkit-transition: width .01s; /* Safari */
+    transition: width .01s;
+}
+
+.four_item_expander div:hover{
+  width:50%;
+}
+.four_item_expander div:hover h4{
+  font-size:24px;
+}
+.four_item_expander div:hover .hiddenWidth{
+  width:100%;
+  height:100%;
 }

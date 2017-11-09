@@ -3,7 +3,7 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
 
-<<<<<<< HEAD
+<!--TODO: Fix the known bug in this file that causes images appearing after grid images to have zoom effect applyed-->
 <div class="container-fluid projects-page"> 
 
 	<h1><?php the_sub_field('title')?></h1>
@@ -39,8 +39,7 @@
 	endif;
 	?>
 
-	
-=======
+
 <?php
 
 if(have_rows('project_grid_layout') ):
@@ -63,6 +62,5 @@ if(have_rows('project_grid_layout') ):
 else :
 
 endif;
->>>>>>> master
 
 ?>
