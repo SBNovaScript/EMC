@@ -4812,4 +4812,6 @@ p.projectsPage {
 
 .three_projects_img{
 	max-height: 300px;
+	margin: auto;
+	width: 100%;
 }
