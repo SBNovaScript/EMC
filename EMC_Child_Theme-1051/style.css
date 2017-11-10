@@ -4809,3 +4809,7 @@ color:white;
 p.projectsPage {
 	padding-bottom: 2em; /*added for projects page*/
 }
+
+.three_projects_img{
+	max-height: 300px;
+}

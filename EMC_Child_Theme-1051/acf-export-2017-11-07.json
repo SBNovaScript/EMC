@@ -915,7 +915,7 @@
                 "sub_fields": [
                     {
                         "key": "field_5a0227b389207",
-                        "label": "Repeat Text",
+                        "label": "Project Text",
                         "name": "repeat_text",
                         "type": "textarea",
                         "value": null,
@@ -935,7 +935,7 @@
                     },
                     {
                         "key": "field_5a022881e676a",
-                        "label": "Repeat Image",
+                        "label": "Project Image",
                         "name": "repeat_image",
                         "type": "image",
                         "value": null,
@@ -960,7 +960,7 @@
                     },
                     {
                         "key": "field_5a022cfddf069",
-                        "label": "Repeat Title",
+                        "label": "Project Title",
                         "name": "repeat_title",
                         "type": "text",
                         "value": null,
@@ -980,7 +980,7 @@
                     },
                     {
                         "key": "field_5a022d0edf06a",
-                        "label": "Repeat Date",
+                        "label": "Project Date",
                         "name": "repeat_date",
                         "type": "date_picker",
                         "value": null,
