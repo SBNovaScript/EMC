@@ -4810,8 +4810,12 @@ p.projectsPage {
 	padding-bottom: 2em; /*added for projects page*/
 }
 
+.three_project{
+	padding: 0px !important;
+	margin: 0px !important;
+	
+}
+
 .three_projects_img{
-	max-height: 300px;
-	margin: auto;
-	width: 100%;
+		max-height: 100%;
 }
