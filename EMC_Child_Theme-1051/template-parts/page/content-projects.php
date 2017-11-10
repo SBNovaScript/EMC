@@ -7,13 +7,15 @@
 
 if(have_rows('three_field_repeater') ):
 
+	$idtext = 0;
+
 	while (have_rows('three_field_repeater') ): the_row();
 	
 		?>
 	
 
 	
-	<div class="three_col_layout">
+	<div class="three_col_layout" id="idtext-<?php echo $idtext; $idtext +=1; ?>">
 <div class="w3-cell-row abc">
   <div class="three_project w3-container w3-cell w3-cell-top w3-mobile col">
     <img class="three_projects_img" src="<?php the_sub_field('three_projects_image_one') ?>">

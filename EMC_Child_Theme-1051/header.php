@@ -26,7 +26,8 @@
 <!--TODO: There is an issue with the menu positioning on sub pages with sizes less then 780px. Some css in a meta query is setting the margin top too big on smaller screens -->
 <?php wp_enqueue_script("jquery"); ?>
 <?php wp_head(); ?>
-<script type="text/javascript" src="wp-content/themes/EMC_Child_Theme-1051/fadeInControl.js"></script>
+<script type="text/javascript" src="wp-content/themes/EMC_Child_Theme-1051/js/fadeInControl.js"></script>
+<script type="text/javascript" src="wp-content/themes/EMC_Child_Theme-1051/js/smooth-scroll.js"></script>
 <!-- j must be lowercase in fadeInControl.js-->
 </head>
 
