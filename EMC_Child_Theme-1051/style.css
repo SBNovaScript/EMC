@@ -4341,8 +4341,8 @@ footer{
 /**CSS FOR 3 COLUMB PROJECT LAYOUT */
 .three_col_layout{
 	width:70%;
-	margin-left:15%;
-	margin-right:15%;
+	margin-left:23em !important;
+	margin-right:20%;
 	margin-bottom:10%;
 	margin-top:10%;
 	font-family: Verdana,sans-serif;
@@ -4823,8 +4823,4 @@ p.projectsPage {
 
 .test-custom-media{
 	margin-bottom:3%
-}
-	
-	
-	
 }
