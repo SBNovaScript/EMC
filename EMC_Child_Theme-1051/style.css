@@ -4339,15 +4339,16 @@ footer{
 
 
 /**CSS FOR 3 COLUMB PROJECT LAYOUT */
-#three_col_layout{
+.three_col_layout{
 	width:70%;
-	margin-left:15%;
-	margin-right:15%;
-	margin-bottom:200px;
-	margin-top:200px;
+	margin-left:23em !important;
+	margin-right:20%;
+	margin-bottom:10%;
+	margin-top:10%;
 	font-family: Verdana,sans-serif;
+	opacity:0;
 }
-#three_col_layout h1{
+.three_col_layout h1{
 	font-family: "Segoe UI", Arial, sans-serif;
 }
 
@@ -4806,7 +4807,7 @@ color:white;
  color:white;
 }
 
-<<<<<<< HEAD
+
 /*A block containing a large image with rounded corneres and a wysiwyg editor*/
 .picAndText{
   width:100%;
@@ -4864,6 +4865,7 @@ p .projectsPage {
 	padding-bottom: 2em; /*added for projects page*/
 }
 
+
 .video_block{
 	width:100%;
 }
@@ -4912,3 +4914,18 @@ p .projectsPage {
   width:100%;
   height:100%;
 }
+
+.three_project{
+	padding: 0px !important;
+	margin: 0px !important;
+	
+}
+
+.three_projects_img{
+		max-height: 300px;
+}
+
+.test-custom-media{
+	margin-bottom:3%
+}
+

@@ -2,6 +2,8 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
+<script
+
 
 <!--TODO: Fix the known bug in this file that causes images appearing after grid images to have zoom effect applyed-->
 <div class="container-fluid projects-page"> 
@@ -40,8 +42,9 @@
 	?>
 
 
-<?php
 
+<?php
+/*
 if(have_rows('project_grid_layout') ):
 
 	while (have_rows('project_grid_layout') ): the_row();
@@ -62,5 +65,5 @@ if(have_rows('project_grid_layout') ):
 else :
 
 endif;
-
+*/
 ?>

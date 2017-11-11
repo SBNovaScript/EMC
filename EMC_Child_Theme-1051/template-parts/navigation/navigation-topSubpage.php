@@ -25,9 +25,9 @@
 <span id = "title">Emergent Media Center</span>
 
 <div id="EII_bar_nav">
-<a class="word" id="block1" href="#">EMERGE</a>
-<a class="word" id="block2" href="#">INNOVATE</a>
-<a class="word" id="block3" href="#">INSPIRE</a>
+<a class="word" id="block1" href="#idtext-0">EMERGE</a>
+<a class="word" id="block2" href="#idtext-1">INNOVATE</a>
+<a class="word" id="block3" href="#idtext-2">INSPIRE</a>
 </div>
 <!--TODO: I have no idea why commenting out the old menu icon makes the page discription collapse, probbly something with spacing-->
 <div id="mySidenav" class="sidenav"><!--This div is what slides out -->
