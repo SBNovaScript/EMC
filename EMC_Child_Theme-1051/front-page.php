@@ -78,7 +78,9 @@ get_header(); ?>
 		 //The Projects block
 		 if( get_row_layout() == 'three_projects' )
 			 get_template_part( 'template-parts/page/content', 'projects' ); 
-		 
+		 //The spacer block
+		 if( get_row_layout() == 'spacer_block' )
+			 get_template_part( 'template-parts/page/content', 'spacer' ); 
 		 
 		endwhile; // close the loop of flexible content
 	endif; // close flexible content conditional
