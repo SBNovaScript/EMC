@@ -20,7 +20,6 @@ get_header(); ?>
 
 <div class="wrap">
 	<div id="primary" class="content-area">
-	
 		<main id="main" class="site-main" role="main">
 		<?php/*BROKEN get_template_part( 'template-parts/page/content', 'projectsSlider' ); */ ?>
 		<?php /*get_template_part( 'template-parts/page/content', 'projectGrid' );*/ ?>
@@ -73,6 +72,10 @@ if (have_posts()) : while (have_posts()) : the_post();
 		 //The Video Block 
 		 if( get_row_layout() == 'pop_out' )
 			 get_template_part( 'template-parts/page/content', 'PopOut' ); 
+		 
+		 //The spacer
+		 if(get_row_layout() == 'spacer')
+			get_template_part( 'template-parts/page/content', 'spacer' ); 
 		 
 		endwhile; // close the loop of flexible content
 	endif; // close flexible content conditional
