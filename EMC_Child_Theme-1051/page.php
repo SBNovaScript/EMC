@@ -36,7 +36,11 @@ if (have_posts()) : while (have_posts()) : the_post();
 		// BLOCK WITH TEXT AND LINK (Pink Block)
 		if( get_row_layout() == 'pink_block' )
 			get_template_part( 'template-parts/page/content', 'pinkBlock' );
-
+		
+		// FOR GALLERY REPEATER TEST
+		if ( get_row_layout() == 'gallery_repeater')
+			get_template_part( 'template-parts/page/content', 'galleryRepeat' );
+		
 		// BLOCK WITH TEXT AND LINK
 		if( get_row_layout() == 'word_block' )
 			get_template_part( 'template-parts/page/content', 'wordbar' );
@@ -44,9 +48,11 @@ if (have_posts()) : while (have_posts()) : the_post();
 		// PROJECTS GRID
 		if( get_row_layout() == 'project_grid' )
 			get_template_part( 'template-parts/page/content', 'projectGrid' );
+		
 		//THREE PROJECT LAYOUT
 		if( get_row_layout() == 'three_projects' )
 			get_template_part( 'template-parts/page/content', 'projects' );
+		
 		//PHOTO GALLERY GRID
 		if( get_row_layout() == 'photo_gallery' )
 			get_template_part( 'template-parts/page/content', 'gallery' );

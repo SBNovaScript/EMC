@@ -5,11 +5,11 @@
   
 <?php
 
-	if(have_rows('photo_gallery_repeater')):
+	if(have_rows('gallery_repeater')):
 		$i = 0;
-		while(have_rows('photo_gallery_repeater')) : the_row();
+		while(have_rows('gallery_repeater')) : thre_row();
 		
-		$image = get_sub_field('photo_gallery_image_repeater');
+		$image = get_sub_field('image_repeater');
 		
 		if(($i %3) == 0):?>
 			<div class="row">
@@ -24,14 +24,3 @@
 		endwhile;
 		endif;
 ?>
-
-
-<!--<h1>--><?php /*the_sub_field('gallery_title'); ?></h1>
-<?php 
-$images = get_sub_field('photo_gallery');
-if($images){
-	foreach($images as $image){ ?>
-	<img src="<?php echo $image['sizes']['thumbnail']?>" alt="<?php echo $image['alt']; ?>" class="gridImg">
-	<?php 
-	}
-}*/?>

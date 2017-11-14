@@ -8,7 +8,7 @@
 <!--TODO: Fix the known bug in this file that causes images appearing after grid images to have zoom effect applyed-->
 <div class="container-fluid projects-page"> 
 
-	<h1><?php the_sub_field('title')?></h1>
+	<?php the_sub_field('title')?>
 	
 	<?php 
 	// check if the repeater field has rows of data
