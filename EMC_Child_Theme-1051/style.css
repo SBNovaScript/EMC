@@ -4611,16 +4611,12 @@ footer{
 	color:white;
 	
 }
-.main-navigation #block2{
-	margin-left:1%;
-	margin-right:1%;
-}
 
 .main-navigation #title{
 	font-size:24px;
 	font-weight:bold;
-	margin-left:3%;
-	margin-right:2%;
+	margin-left:4%;
+	margin-right:1%;
 	color:#2f2f30;
 }
 
@@ -4891,6 +4887,10 @@ p .projectsPage {
 
 .video_block{
 	width:100%;
+}
+
+.missionDiv iframe{
+	margin-top:80px;
 }
 
 /*Styling for the anamated expander element on the project page. Its not perfect but it basically works. We might want to add some jquery later to fade in the text so its less jaring*/
