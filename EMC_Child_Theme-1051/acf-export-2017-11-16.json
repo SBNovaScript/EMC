@@ -1043,6 +1043,103 @@
                         ],
                         "min": "",
                         "max": ""
+                    },
+                    "5a0dce895b8d3": {
+                        "key": "5a0dce895b8d3",
+                        "name": "linked_gallery",
+                        "label": "Linked Gallery",
+                        "display": "block",
+                        "sub_fields": [
+                            {
+                                "key": "field_5a0dcebc5b8d4",
+                                "label": "Photo Repeater",
+                                "name": "photo_repeater",
+                                "type": "repeater",
+                                "value": null,
+                                "instructions": "Images inserted here must be square. Be sure to fill out alt text for all images.",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "collapsed": "",
+                                "min": 0,
+                                "max": 0,
+                                "layout": "table",
+                                "button_label": "",
+                                "sub_fields": [
+                                    {
+                                        "key": "field_5a0dceee5b8d5",
+                                        "label": "Linked Image",
+                                        "name": "linked_image",
+                                        "type": "image",
+                                        "value": null,
+                                        "instructions": "MUST be square",
+                                        "required": 0,
+                                        "conditional_logic": 0,
+                                        "wrapper": {
+                                            "width": "",
+                                            "class": "",
+                                            "id": ""
+                                        },
+                                        "return_format": "array",
+                                        "preview_size": "medium",
+                                        "library": "all",
+                                        "min_width": "",
+                                        "min_height": "",
+                                        "min_size": "",
+                                        "max_width": "",
+                                        "max_height": "",
+                                        "max_size": "",
+                                        "mime_types": ""
+                                    },
+                                    {
+                                        "key": "field_5a0dcf4a5b8d6",
+                                        "label": "Title",
+                                        "name": "linked_image_title",
+                                        "type": "text",
+                                        "value": null,
+                                        "instructions": "",
+                                        "required": 0,
+                                        "conditional_logic": 0,
+                                        "wrapper": {
+                                            "width": "40",
+                                            "class": "",
+                                            "id": ""
+                                        },
+                                        "default_value": "",
+                                        "placeholder": "",
+                                        "prepend": "",
+                                        "append": "",
+                                        "maxlength": 50
+                                    },
+                                    {
+                                        "key": "field_5a0dcf795b8d7",
+                                        "label": "Link Location",
+                                        "name": "link_location",
+                                        "type": "page_link",
+                                        "value": null,
+                                        "instructions": "",
+                                        "required": 0,
+                                        "conditional_logic": 0,
+                                        "wrapper": {
+                                            "width": "",
+                                            "class": "",
+                                            "id": ""
+                                        },
+                                        "post_type": [],
+                                        "taxonomy": [],
+                                        "allow_null": 0,
+                                        "allow_archives": 1,
+                                        "multiple": 0
+                                    }
+                                ]
+                            }
+                        ],
+                        "min": "",
+                        "max": ""
                     }
                 },
                 "button_label": "Add Row",

@@ -79,8 +79,9 @@ if (have_posts()) : while (have_posts()) : the_post();
 		 //The spacer block
 		 if( get_row_layout() == 'spacer' )
 			 get_template_part( 'template-parts/page/content', 'spacer' ); 
-		 
-		 
+		//PHOTO GALLERY GRID
+		if( get_row_layout() == 'photo_repeater' )
+			get_template_part( 'template-parts/page/content', 'linkedGrid' );
 		endwhile; // close the loop of flexible content
 	endif; // close flexible content conditional
 

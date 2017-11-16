@@ -21,7 +21,7 @@ get_header(); ?>
 <div class="wrap">
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
-		<?php/*BROKEN get_template_part( 'template-parts/page/content', 'projectsSlider' ); */ ?>
+		<?php ?>
 		<?php /*get_template_part( 'template-parts/page/content', 'projectGrid' );*/ ?>
 			<?php 
 if (have_posts()) : while (have_posts()) : the_post();
@@ -76,6 +76,10 @@ if (have_posts()) : while (have_posts()) : the_post();
 		 //The spacer
 		 if(get_row_layout() == 'spacer')
 			get_template_part( 'template-parts/page/content', 'spacer' ); 
+		
+		 //PHOTO GALLERY GRID
+		if( get_row_layout() == 'linked_gallery' )
+			get_template_part( 'template-parts/page/content', 'linkedGrid' );
 		 
 		endwhile; // close the loop of flexible content
 	endif; // close flexible content conditional
