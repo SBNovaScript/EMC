@@ -20,10 +20,8 @@ get_header(); ?>
 
 <div class="wrap">
 	<div id="primary" class="content-area">
-	
+	3riwbopvkd=hnjbhe
 		<main id="main" class="site-main" role="main">
-		<?php/*BROKEN get_template_part( 'template-parts/page/content', 'projectsSlider' ); */ ?>
-		<?php /*get_template_part( 'template-parts/page/content', 'projectGrid' );*/ ?>
 			<?php 
 if (have_posts()) : while (have_posts()) : the_post();
 		get_template_part( 'template-parts/page/content', 'video.php' );
