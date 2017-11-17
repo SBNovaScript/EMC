@@ -1,4 +1,4 @@
-<h1>Gallery</h1>
+<h1><?php the_sub_field('gallery_title'); ?></h1>
 <?php 
 $images = get_sub_field('photo_gallery');
 if($images){

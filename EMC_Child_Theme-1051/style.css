@@ -385,7 +385,7 @@ textarea {
 }
 
 h1,
-/* h2 was here, taken out for projects page */
+h2,
 h3,
 h4,
 h5,
@@ -451,10 +451,8 @@ h6 {
 
 p {
 	margin: 0 0 1.5em;
-	padding: 0; 
+	padding: 0;
 }
-
-
 
 dfn,
 cite,
@@ -1318,7 +1316,7 @@ a:hover .nav-title,
 .main-navigation .menu-item-has-children > a > .icon,
 .main-navigation .page_item_has_children > a > .icon,
 .main-navigation ul a > .icon {
-	display: block;
+	display: none;
 }
 
 .main-navigation > div > ul {
@@ -1346,6 +1344,7 @@ a:hover .nav-title,
 }
 
 .main-navigation li {
+	border-bottom: 1px solid #eee;
 	position: relative;
 }
 
@@ -1616,8 +1615,7 @@ body:not(.title-tagline-hidden) .site-branding-text {
 }
 
 .custom-header-media {
-	/*This line was causing it to break the menu for some reaseon */
-	/*bottom: 0;*/
+	bottom: 0;
 	left: 0;
 	overflow: hidden;
 	position: absolute;
@@ -2502,7 +2500,7 @@ h2.widget-title {
 	padding: 0.5em 0;
 }
 
-.widget ul li + li {
+.widget:not(.widget_tag_cloud) ul li + li {
 	margin-top: -1px;
 }
 
@@ -2544,7 +2542,7 @@ h2.widget-title {
 	padding-top: 1em;
 }
 
-/* widget markup */
+/* Widget markup */
 
 .widget .post-date,
 .widget .rss-date {
@@ -2695,6 +2693,14 @@ h2.widget-title {
 
 /* Tag cloud widget */
 
+.tagcloud ul li {
+	float: left;
+	border-top: 0;
+	border-bottom: 0;
+	padding: 0;
+	margin: 4px 4px 0 0;
+}
+
 .tagcloud,
 .widget_tag_cloud,
 .wp_widget_tag_cloud {
@@ -2707,12 +2713,8 @@ h2.widget-title {
 	border: 1px solid #ddd;
 	-webkit-box-shadow: none;
 	box-shadow: none;
-	display: inline-block;
-	float: left;
-	font-size: 14px !important; /* !important to overwrite inline styles */
-	font-size: 0.875rem !important;
-	margin: 4px 4px 0 0 !important;
-	padding: 4px 10px 5px !important;
+	display: block;
+	padding: 4px 10px 5px;
 	position: relative;
 	-webkit-transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, color 0.3s ease-in-out;
 	transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, color 0.3s ease-in-out;
@@ -2742,6 +2744,16 @@ h2.widget-title {
 
 .widget_calendar tfoot td {
 	border: 0;
+}
+
+/* Gallery widget */
+
+.gallery-columns-5 .gallery-caption,
+.gallery-columns-6 .gallery-caption,
+.gallery-columns-7 .gallery-caption,
+.gallery-columns-8 .gallery-caption,
+.gallery-columns-9 .gallery-caption {
+	display: none;
 }
 
 /*--------------------------------------------------------------
@@ -2776,6 +2788,14 @@ iframe,
 object {
 	margin-bottom: 1.5em;
 	max-width: 100%;
+}
+
+/* Remove bottom on embeds that wrapped in paragraphs via wpautop. */
+
+p > embed:only-child,
+p > iframe:only-child,
+p > object:only-child {
+	margin-bottom: 0;
 }
 
 .wp-caption,
@@ -2976,7 +2996,10 @@ object {
 
 .gallery-item a,
 .gallery-item a:hover,
-.gallery-item a:focus {
+.gallery-item a:focus,
+.widget-area .gallery-item a,
+.widget-area .gallery-item a:hover,
+.widget-area .gallery-item a:focus {
 	-webkit-box-shadow: none;
 	box-shadow: none;
 	background: none;
@@ -3049,7 +3072,7 @@ object {
 }
 
 /* Add some space around the visual edit shortcut buttons. */
-.twentyseventeen-panel .customize-partial-edit-shortcut button {
+.twentyseventeen-panel > .customize-partial-edit-shortcut > button {
 	top: 30px;
 	left: 30px;
 }
@@ -4242,14 +4265,18 @@ object {
 		padding: 0;
 	}
 }
-
-body{
-	color:#5A5555;
-}
-
 /*End of Parent CSS*/
 
+/**Background image**/
 
+/*
+.site-content-contain{
+	background-image: url("https://image.ibb.co/nDYjYG/EMCsite_Background_06.jpg"); /*TODO Can't currenly add Pete's background becouse it exceeds maximum upload sizesso I'm hosting it elsewhere for now*/
+}
+
+.site-content-contain .wrap{
+	/*background-color:white;*/
+}
 
 
 /** FOOTER CSS **/
@@ -4265,7 +4292,11 @@ body{
     color:white;
     display:block;
 }
- 
+
+.fixed-col div{
+	display:inline-block;
+	
+}
 .varible-col {
     display:none;
 }
@@ -4336,6 +4367,9 @@ footer{
 	background-color:#1E1919;
 }   
 
+.social-navigation{
+	text-align:center;
+}
 
 
 /**CSS FOR 3 COLUMB PROJECT LAYOUT */
@@ -4368,8 +4402,6 @@ footer{
   font-family: sans-serif;
   font-size:20px;
   text-align:center;
-  margin-top:40px;
-  margin-bottom:40px;
 }
 
 #EII_bar h1{
@@ -4562,11 +4594,16 @@ footer{
 
 /*Navagation for subpages style */
 .main-navigation .word{
+	padding-top:30px;
+	
+}
+
+.main-navigation .word{
 	display:inline-block;
-	padding-left:4%;
-	padding-right: 4%;
-	padding-top:8px;
-	padding-bottom:8px;
+	padding-left:3%;
+	padding-right: 3%;
+	padding-top:7px;
+	padding-bottom:7px;
 	font-size:16px;
 	color:white;
 	
@@ -4581,13 +4618,6 @@ footer{
 	margin-right:1%;
 }
 
-.main-navigation #title{
-	font-size:24px;
-	font-weight:bold;
-	margin-left:3%;
-	margin-right:3%;
-	color:#2f2f30;
-}
 
 
 /*Navagation for subpages style */
@@ -4610,7 +4640,7 @@ footer{
 	font-size:24px;
 	font-weight:bold;
 	margin-left:3%;
-	margin-right:3%;
+	margin-right:2%;
 	color:#2f2f30;
 }
 
@@ -4623,8 +4653,8 @@ footer{
 .slideOutIcon{
 	color:#535354;
 	font-weight:bold;
-	font-size:40px;
-	line-height: 50px;
+	font-size:30px;
+	color:black;
 }
 
 @media screen and (max-width: 998px) {
@@ -4666,12 +4696,6 @@ footer{
 }
 
 
-.slideOutIcon{
-	color:#535354;
-	font-weight:bold;
-	font-size:40px;
-	line-height: 50px;
-}
 .sub-page-header{
 	margin-top:60px;
 }
@@ -4724,12 +4748,12 @@ footer{
 /*Mission Statement block */
 .missionDiv{
 	color:black;
-  width:100%;
-  border-radius:4px;
-  border: .5px solid #c6c6c6;
+	width:100%;
+	border-radius:4px;
+	border: .5px solid #c6c6c6;
 }
 .missionDiv .content .title{
-	padding-top:30px;
+  padding-top:30px;
   text-align:center;
   font-size:40px;
 }
@@ -4741,54 +4765,58 @@ footer{
 }
 
 .missionDiv .content .subtitle{
- font-size:35px;
- margin-top:20px;
- color:black;
- font-weight:bold;
+	font-size:35px;
+	margin-top:45px;
+	margin-bottom:30px;
+	color:black;
+	font-weight:bold;
+	text-align:center;
 }
 .missionDiv .content p{
- color:black;
- font-size:1.2em;
+	color:black;
+	font-size:1.2em;
 }
-.missionDiv .content .links p{
- text-align:center;
+.missionDiv .content .links .button{
+  width:25%;
+  text-align:center;
+  display:inline-block;
+  padding-top:20px;
+  padding-bottom:20px;
+  min-width:150px;
 }
-.missionDiv .content .links a{
-  padding-left:12%;
- padding-right:12%;
- padding-top:12px;
- padding-bottom:12px;
- border:1px solid black;
- text-align:center;
- min-width:20px;
-}
+
 .missionDiv .content .links{
+  
  margin-top:60px;
  margin-bottom:60px;
  max-width:700px;
  margin-left:auto;
  margin-right:auto;
+ text-align:center;
+ 
+}
+.missionDiv .content .title .words{
+  padding-bottom:7px; /*Pushes down border so it looks better*/
+  margin-bottom:7px;/*This is nessary to insure line spacing remains consistant on smaller screens.*/
+  display:inline-block;
 }
 .missionDiv .content .title .blue{
   border-bottom:5px solid #528BB9;
-  padding-bottom:7px;
 }
 
 .missionDiv .content .title .lightBlue{
   border-bottom:5px solid #58C3EB;
-  padding-bottom:7px;
 }
 .missionDiv .content .title .red{
   border-bottom:5px solid #ED686B;
-  padding-bottom:7px;
 }
 .missionDiv .content .links .blue{
  border:1px solid #528BB9;
 }
 .missionDiv .content .links .lightBlue{
  border:1px solid #58C3EB;
- margin-left:2%;
- margin-right:2%;
+   margin-left:5%;
+  margin-right:5%;
 }
 .missionDiv .content .links .red{
  border:1px solid #ED686B;
@@ -4807,9 +4835,133 @@ color:white;
  color:white;
 }
 
-p.projectsPage {
+/*Ajust the buttons so they display full width on smaller screens*/
+@media screen and (max-width: 650px) /* Mobile */ {
+	.missionDiv .content .links .button{
+		width:70%;
+	}
+  
+  /*Add extra padding to elements except first one smaller screens. Addeng padding to all messes up spacing so only red and lightblue are set*/
+	.missionDiv .content .links .red{
+		margin-top:20px;
+	}
+	.missionDiv .content .links .lightBlue{
+		margin-top:20px;
+	}
+}
+
+
+/*A block containing a large image with rounded corneres and a wysiwyg editor*/
+.picAndText{
+  width:100%;
+  border:.5px solid #c6c6c6;
+  border-radius:4px;
+  color:black;
+}
+.picAndText img{
+  width:100%;
+  /*border-radius:4px;*/
+}
+.picAndText .content{
+  width:80%;
+  margin-left:10%;
+  margin-bottom:20px;
+  margin-top:20px;
+}
+/*Mid sized text blocks that appear between other elements*/
+.midText{
+  width:60%;
+  margin-left:20%;
+  margin-top:80px;
+  margin-bottom:80px;
+
+  font-size:18px;
+}
+.midText h1{
+	  color:black;
+}
+
+.twoImages{
+  width:100%;
+}
+.twoImages div{
+  height:300px;
+  display:inline-block;
+  border-radius:4px;
+  width:49%;
+}
+.twoImages .small{
+  width:37%;
+  
+}
+.twoImages .big{
+  width:61.5%;
+}
+.twoImages img{
+  width:100%;
+  height:100%;
+  overflow:hidden;
+  border-radius:4px;
+}
+
+p .projectsPage {
 	padding-bottom: 2em; /*added for projects page*/
 }
+
+
+.video_block{
+	width:100%;
+}
+
+/*Styling for the anamated expander element on the project page. Its not perfect but it basically works. We might want to add some jquery later to fade in the text so its less jaring*/
+
+.four_item_expander{
+  width:100%;
+  height:500px;
+
+  vertical-align: middle;
+  display: flex;
+  align-items: center;
+      text-align: center;
+
+}
+.four_item_expander div{
+  width:25%;
+  display:inline-block;
+  vertical-align: middle;
+  -webkit-transition: width .5s; /* Safari */
+    transition: width .5s;
+}
+.four_item_expander div img{
+  width:100%;
+  -webkit-transition: width .01s; /* Safari */
+    transition: width .01s;
+    -webkit-transition: height 1s; /* Safari */
+    transition: height 1s;
+}
+.four_item_expander div h4{
+  font-size:18px;
+  margin:10px;
+}
+
+/*Hide it by default so it can be showen by jquery*/
+.four_item_expander div .hiddenWidth{
+  -webkit-transition: width .01s; /* Safari */
+    transition: width .01s;
+    display:none;
+    width:100%;
+	text-align:center;
+}
+
+/*This element is expanded on load so set its size and other elements to propper values*/
+.four_item_expander .card:nth-child(3){
+  width:50%;
+}
+.four_item_expander .card:nth-child(3) .hiddenWidth{
+  display:inline-block;
+}
+
+/*SECTION ENDS*/
 
 .three_project{
 	padding: 0px !important;
@@ -4824,3 +4976,15 @@ p.projectsPage {
 .test-custom-media{
 	margin-bottom:3%
 }
+
+
+/*Spacer*/
+.spacer{
+	height:60px;
+	width:100%;
+}
+
+iframe{
+	width:100%;
+}
+

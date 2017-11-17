@@ -18,48 +18,80 @@
 
 get_header(); ?>
 
-
+<div class="wrap">
+	
 <div id="primary" class="content-area">
 	
 <main id="main" class="site-main" role="main">
 
 
 <?php // Show the selected frontpage content.
+			if (have_posts()) : while (have_posts()) : the_post();
+		get_template_part( 'template-parts/page/content', 'video.php' );
+	// are there any rows within within our flexible content?
+	if( have_rows('page_content') ): 
+
+		// loop through all the rows of flexible content
+		while ( have_rows('page_content') ) : the_row();
+
+		// BLOCK WITH TEXT AND LINK (Pink Block)
+		if( get_row_layout() == 'pink_block' )
+			get_template_part( 'template-parts/page/content', 'pinkBlock' );
+
+		// BLOCK WITH TEXT AND LINK
+		if( get_row_layout() == 'word_block' )
+			get_template_part( 'template-parts/page/content', 'wordbar' );
+
+		// PROJECTS GRID
+		if( get_row_layout() == 'project_grid' )
+			get_template_part( 'template-parts/page/content', 'projectGrid' );
+		//THREE PROJECT LAYOUT
+		if( get_row_layout() == 'three_projects' )
+			get_template_part( 'template-parts/page/content', 'projects' );
+		//PHOTO GALLERY GRID
+		if( get_row_layout() == 'photo_gallery' )
+			get_template_part( 'template-parts/page/content', 'gallery' );
 		
-	if ( have_posts() ) :
-			
-		while ( have_posts() ) : the_post();
-				
-			/*get_template_part( 'template-parts/page/content', 'front-page' );*/
-			if( have_rows('home_page_content') ): 
+		//MISSION STATEMENT
+		if( get_row_layout() == 'mission_statement' )
+			get_template_part( 'template-parts/page/content', 'missionStatement' );
+		
+		//PIC AND TEXT BLOCK
+		if( get_row_layout() == 'pic_and_text' )
+			 get_template_part( 'template-parts/page/content', 'picAndText' ); 
+		//MID SIZED TEXT WITH LOTS OF SPACING
+		if( get_row_layout() == 'mid_text' )
+			 get_template_part( 'template-parts/page/content', 'midText' ); 
 
-					// loop through all the rows of flexible content
-					while ( have_rows('home_page_content') ) : the_row();
+		 //TWO IMAGES ON ONE LINE
+		 if( get_row_layout() == 'two_images' )
+			 get_template_part( 'template-parts/page/content', 'twoImages' ); 
+		 
+		 //The Video Block 
+		 if( get_row_layout() == 'video_block' )
+			 get_template_part( 'template-parts/page/content', 'video' ); 
+		 
+		 //The Video Block 
+		 if( get_row_layout() == 'pop_out' )
+			 get_template_part( 'template-parts/page/content', 'PopOut' ); 
+		 
+		 //The Projects block
+		 if( get_row_layout() == 'three_projects' )
+			 get_template_part( 'template-parts/page/content', 'projects' ); 
+	 
+		  //The spacer
+		 if(get_row_layout() == 'spacer')
+			get_template_part( 'template-parts/page/content', 'spacer' ); 
 
-						// BLOCK WITH TEXT AND LINK (Pink Block)
-						if( get_row_layout() == 'pink_block' )
-						get_template_part( 'template-parts/page/content', 'pinkBlock' );
-
-						// BLOCK WITH TEXT AND LINK
-						if( get_row_layout() == 'word_block' )
-							get_template_part( 'template-parts/page/content', 'wordbar' );
-
-						// PROJECTS GRID
-						if( get_row_layout() == 'project_grid' )
-							get_template_part( 'template-parts/page/content', 'projectGrid' );
-						
-						//THREE PROJECT LAYOUT
-						if( get_row_layout() == 'three_projects' )
-							get_template_part( 'template-parts/page/content', 'projects' );
+		 
+		endwhile; // close the loop of flexible content
+	endif; // close flexible content conditional
 
 		endwhile; // close the loop of flexible content
 	endif; // close flexible content conditional
-			endwhile;
+
 		
-			else : // I'm not sure it's possible to have no posts when this page is shown, but WTH.
-			
-				get_template_part( 'template-parts/post/content', 'none' );
-		endif; ?>
+ ?>
 
 		
 
