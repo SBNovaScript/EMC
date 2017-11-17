@@ -4374,14 +4374,18 @@ footer{
 
 /**CSS FOR 3 COLUMB PROJECT LAYOUT */
 .three_col_layout{
-	width:70%;
+	/*width:70%;
 	margin-left:23em !important;
 	margin-right:20%;
-	margin-bottom:10%;
+	margin-bottom:10%;*/
 	margin-top:10%;
 	font-family: Verdana,sans-serif;
+}
+
+.fade-in-layout{
 	opacity:0;
 }
+
 .three_col_layout h1{
 	font-family: "Segoe UI", Arial, sans-serif;
 }

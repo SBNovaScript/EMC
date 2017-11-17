@@ -4,7 +4,7 @@ jQuery(document).ready(function() {
     jQuery(window).scroll( function(){
     
         /* Check the location of each desired element */
-        jQuery('.three_col_layout').each( function(i){
+        jQuery('.fade-in-layout').each( function(i){
             
             var bottom_of_object = jQuery(this).offset().top + jQuery(this).outerHeight();
             var bottom_of_window = jQuery(window).scrollTop() + jQuery(window).height();
