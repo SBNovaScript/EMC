@@ -2,11 +2,8 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-<script
 
-
-<!--TODO: Fix the known bug in this file that causes images appearing after grid images to have zoom effect applyed-->
-<div class="container-fluid projects-page"> 
+<div class="container-fluid projects-page">
 
 	<h1><?php the_sub_field('title')?></h1>
 	
@@ -27,7 +24,7 @@
 			<?php endif?>
 			
 			<!--All info that creates each item -->
-			<div class="col-sm-4">
+			<div class="col-sm-4 three_col_layout">
 			<img src="<?php echo $image['url']; ?>" alt ="<?php echo $image['alt']?>"> 
 			<h2><?php the_sub_field('project_title'); ?></h2>
 			<p>

@@ -45,9 +45,11 @@ get_header(); ?>
 		// PROJECTS GRID
 		if( get_row_layout() == 'project_grid' )
 			get_template_part( 'template-parts/page/content', 'projectGrid' );
-		//THREE PROJECT LAYOUT
-		if( get_row_layout() == 'three_projects' )
-			get_template_part( 'template-parts/page/content', 'projects' );
+		
+		//TWO PROJECT LAYOUT
+		if( get_row_layout() == 'two_projects' )
+			get_template_part( 'template-parts/page/content', 'twoProjects' );
+		
 		//PHOTO GALLERY GRID
 		if( get_row_layout() == 'photo_gallery' )
 			get_template_part( 'template-parts/page/content', 'gallery' );
