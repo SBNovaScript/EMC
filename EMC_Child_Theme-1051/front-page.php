@@ -84,7 +84,11 @@ get_header(); ?>
 		  //The spacer
 		 if(get_row_layout() == 'spacer')
 			get_template_part( 'template-parts/page/content', 'spacer' ); 
-
+		
+		//The linked photo grid
+		if(get_row_layout() == 'linked_photo_gallery')
+			get_template_part( 'template-parts/page/content', 'linkedGrid' ); 
+		
 		 
 		endwhile; // close the loop of flexible content
 	endif; // close flexible content conditional

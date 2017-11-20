@@ -1,3 +1,2 @@
-acf-export-2017-11-17
-
-- added Two Project Layout
+acf-export-2017-11-17 - added Two Project Layout
+acf-export-2017-11-20 - Added the linked image grid 
