@@ -80,6 +80,9 @@ if (have_posts()) : while (have_posts()) : the_post();
 		 if( get_row_layout() == 'spacer_block' )
 			 get_template_part( 'template-parts/page/content', 'spacer' ); 
 		 
+		 //The linked photo grid
+		if(get_row_layout() == 'linked_photo_gallery')
+			get_template_part( 'template-parts/page/content', 'linkedGrid' ); 
 		 
 		endwhile; // close the loop of flexible content
 	endif; // close flexible content conditional
