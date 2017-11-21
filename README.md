@@ -3,12 +3,12 @@ This is the GitHub EMC Website repository. All theme files can be found under th
 
 #### template-parts:  
 
-&nbsp;&nbsp;&nbsp;&nbsp; footer - information about the footer oon all pages 
+&nbsp;&nbsp;&nbsp;&nbsp; footer - information about the footer of the main page.  
 &nbsp;&nbsp;&nbsp;&nbsp; header - information about the header image and site branding.  
 &nbsp;&nbsp;&nbsp;&nbsp; navigation - information about the pull out menu.  
 
 &nbsp;&nbsp;&nbsp;&nbsp; page:  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;content-pinkBlock.php - information to layout 500px tall block that contains centered link and text on colored background.  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;content-pinkBlock.php - information about the about us/ our work section.  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;content-projectGrid.php - information about the project grid, found on the projects page.  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;content-projects.php - information on the project titles, dates, and descriptions.  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;content-projectSlider.php - information about the projects page slider.  
@@ -17,9 +17,9 @@ This is the GitHub EMC Website repository. All theme files can be found under th
 #### non-template-parts:  
 
 &nbsp;&nbsp;&nbsp;&nbsp;customizer.php - information about custom elements added to the customizer.  
-&nbsp;&nbsp;&nbsp;&nbsp;footer.php - information about the footer links on all pages.  
+&nbsp;&nbsp;&nbsp;&nbsp;footer.php - information about the footer links on the main page.  
 &nbsp;&nbsp;&nbsp;&nbsp;front-page.php - information about changing the main page's elements.  
 &nbsp;&nbsp;&nbsp;&nbsp;header.php - information about adding the header elements to the main page.  
-&nbsp;&nbsp;&nbsp;&nbsp;project_page.php - The costom template for the projects page.  
+&nbsp;&nbsp;&nbsp;&nbsp;project_page.php - information about how the project page works.  
 &nbsp;&nbsp;&nbsp;&nbsp;screenshot.png - the theme preview image.  
 &nbsp;&nbsp;&nbsp;&nbsp;style.css - where most of the styling occurs.  
