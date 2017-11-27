@@ -46,7 +46,7 @@
 		'theme_location' => 'top',
 		'menu_id'        => 'top-menu',
 	) ); ?>
-	<div class="three-boxes"><div></div><div id="center"></div><div id="end"></div></div>
+	<!--<div class="three-boxes"><div></div><div id="center"></div><div id="end"></div></div>-->
 </div>
 
 <div id="darkMask"></div>
@@ -66,19 +66,22 @@ var isOpen = false;
 //TODO We might want to implement code to dinamically resize as the window changes, right now it only checks size when menu opens
 function openNav() {
 	isOpen = true;
+	navWidth = "100%";
+	
+	/*
 	if (window.matchMedia('(max-width: 500px)').matches){
 		console.log("Less then 500px");
 		navWidth = "100%";
 		darkWidth = "0";
 	}else if(window.matchMedia('(max-width: 900px)').matches){
 		console.log("Less then 900px");
-		navWidth = "50%";
+		navWidth = "100%";
 	}
 	else{
-		navWidth = "25%";
+		navWidth = "100%";
 				console.log("Greater then 900");
 	}
-	
+	*/
 		console.log("meunu opwn");
 		document.getElementById("mySidenav").style.width = navWidth;
 		document.getElementById("darkMask").style.width = darkWidth;
@@ -90,10 +93,11 @@ function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
 	document.getElementById("darkMask").style.width = "0";
 }
-
+/*
 window.onresize = resize;
-
+*/
 //May not be the most effecent way, but this function lets the menu dinamically resize when window resizes
+/*
 function resize() {
     if(isOpen){
 		if (window.matchMedia('(max-width: 500px)').matches){
@@ -102,10 +106,10 @@ function resize() {
 		darkWidth = "0";
 	}else if(window.matchMedia('(max-width: 900px)').matches){
 		console.log("Less then 900px");
-		navWidth = "50%";
+		navWidth = "100%";
 	}
 	else{
-		navWidth = "25%";
+		navWidth = "100%";
 				console.log("Greater then 900");
 	}
 	
@@ -114,5 +118,5 @@ function resize() {
 		document.getElementById("darkMask").style.width = darkWidth;
 	}
 
-}
+}*/
 </script>
