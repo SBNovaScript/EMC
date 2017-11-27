@@ -4,7 +4,7 @@
 
 
 <div class="container-fluid projects-page">
-
+<div class="three_col_layout">
 	<h1><?php the_sub_field('title')?></h1>
 	
 	<?php 
@@ -20,7 +20,6 @@
 		
 		//Check if this run is a multible of 3 if so insert new row div wrapper
 			if(($i % 3) == 0):?>
-				<div class="row">
 			<?php endif?>
 			
 			<!--All info that creates each item -->
@@ -30,6 +29,7 @@
 			<p>
 			<?php the_sub_field('project_description'); ?>
 			</p>
+			</div>
 			</div>
 <?php $i++ ?>
 	<?php 
