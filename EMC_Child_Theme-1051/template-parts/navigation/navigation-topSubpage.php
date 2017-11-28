@@ -31,11 +31,16 @@
 <!--Why is this element broken-->
 <span id = "title"><!--EMERGENT MEDIA CENTER--><?php bloginfo( 'name' ); ?></span>
 
+<!--
+
+*Note that Jen wanted this hidden for now.
+
 <div id="EII_bar_nav">
 <a class="word" id="block1" href="<?php echo get_theme_mod( 'EmergeLink', 'http://www.google.com' ); ?>"><?php echo get_theme_mod( 'EmergeText', 'EMERGE' ); ?></a>
 <a class="word" id="block2" href="<?php echo get_theme_mod( 'InnovateLink', 'http://www.google.com' ); ?>"><?php echo get_theme_mod( 'InnovateText', 'INNOVATE' ); ?></a>
 <a class="word" id="block3" href="<?php echo get_theme_mod( 'InspireLink', 'http://www.google.com' ); ?>"><?php echo get_theme_mod( 'InspireText', 'INSPIRE' ); ?></a>
 </div>
+-->
 
 <!--TODO: I have no idea why commenting out the old menu icon makes the page discription collapse, probbly something with spacing-->
 <div id="mySidenav" class="sidenav"><!--This div is what slides out -->
