@@ -14,7 +14,7 @@ function emc_customizer( $wp_customize ){
 
 	//Section 
 	$wp_customize->add_section('mainButtons', array(
-	  'title'	=> __('Buttons', 'EMC_Theme'),
+	  'title'	=> __('Sub Page Header', 'EMC_Theme'),
 	  'priority'    => 1
 	) );
   
@@ -36,6 +36,9 @@ function emc_customizer( $wp_customize ){
 	) );
 	$wp_customize->add_setting( 'InspireLink', array(
 	'default'  =>__('http://www.google.com', 'EMC_Theme')
+	) );
+	$wp_customize->add_setting( 'HeaderTitle', array(
+	'default'  =>__('EMERGENT MEDIA CENTER', 'EMC_Theme')
 	) );
   
 	//Controls
@@ -78,6 +81,15 @@ function emc_customizer( $wp_customize ){
     'section'  => 'mainButtons',
     'settings' => 'InspireLink',
     'type'     => 'url'
+  ) );
+  
+  
+  //Title
+  $wp_customize->add_control( 'HeaderTitle', array(
+    'label'    => __( 'Header Title', 'EMC_Theme' ),
+    'section'  => 'mainButtons',
+    'settings' => 'HeaderTitle',
+    'type'     => 'textarea'
   ) );
   
   /*Costomise Text in home page footer*/

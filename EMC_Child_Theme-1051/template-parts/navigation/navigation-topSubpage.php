@@ -32,9 +32,9 @@
 <span id = "title"><!--EMERGENT MEDIA CENTER--><?php bloginfo( 'name' ); ?></span>
 
 <div id="EII_bar_nav">
-<a class="word" id="block1" href="<?php echo get_theme_mod( 'EmergeLink', 'http://www.google.com' ); ?>" target="_blank"><?php echo get_theme_mod( 'EmergeText', 'EMERGE' ); ?></a>
-<a class="word" id="block2" href="<?php echo get_theme_mod( 'InnovateLink', 'http://www.google.com' ); ?>" target="_blank"><?php echo get_theme_mod( 'InnovateText', 'INNOVATE' ); ?></a>
-<a class="word" id="block3" href="<?php echo get_theme_mod( 'InspireLink', 'http://www.google.com' ); ?>" target="_blank"><?php echo get_theme_mod( 'InspireText', 'INSPIRE' ); ?></a>
+<a class="word" id="block1" href="<?php echo get_theme_mod( 'EmergeLink', 'http://www.google.com' ); ?>"><?php echo get_theme_mod( 'EmergeText', 'EMERGE' ); ?></a>
+<a class="word" id="block2" href="<?php echo get_theme_mod( 'InnovateLink', 'http://www.google.com' ); ?>"><?php echo get_theme_mod( 'InnovateText', 'INNOVATE' ); ?></a>
+<a class="word" id="block3" href="<?php echo get_theme_mod( 'InspireLink', 'http://www.google.com' ); ?>"><?php echo get_theme_mod( 'InspireText', 'INSPIRE' ); ?></a>
 </div>
 
 <!--TODO: I have no idea why commenting out the old menu icon makes the page discription collapse, probbly something with spacing-->
