@@ -5090,15 +5090,20 @@ iframe{
 -ms-user-select: none;
 -o-user-select: none;
 user-select: none;
+cursor: pointer;
 }
 
 .fancy_drop_down_menu .iconOpen{
   background-color:transparent;
+  cursor: pointer;
 }
-.fancy_drop_down_menu .content{
+.fancy_drop_down_menu .dropDown{
   display:none;
   width:100%;
   overflow: hidden;
+  margin-bottom: 20px;
+    margin-top: 20px;
+	margin-left:0;
 }
 
 .fancy_drop_down_menu h2{
@@ -5113,6 +5118,13 @@ user-select: none;
   padding-top:0;
 }
 .fancy_drop_down_menu p{
-  margin-left:50px;
+ /* margin-left:50px;*/
 }
 
+/*Add back the margins on bigger screens*/
+@media screen and (min-width: 768px) /* Mobile */ {
+	.fancy_drop_down_menu .dropDown{
+		margin-left:10%;
+		width:90%;
+`	}
+}

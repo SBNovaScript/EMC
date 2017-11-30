@@ -4,7 +4,7 @@ $(document).ready(function(){
 	
 	$(".item").click(function(){
   
-  	$(this).children(".content").slideToggle(200);
+  	$(this).children(".dropDown").slideToggle(200);
     $(this).children(".icon").toggleClass("iconOpen");
     
     //Sqitch the plus sign for the minus sign and back
@@ -28,7 +28,7 @@ if( have_rows('fancy_bullet_points_picAndText_repeater') ):
 	<li class="item">
 		<div class="icon">+</div><h2> <?php the_sub_field('fancy_bullet_points_picAndText_repeater_title'); ?></h2>
 		<h3><?php the_sub_field('fancy_bullet_points_picAndText_repeater_subtitle'); ?></h3>
-		<div class="content">
+		<div class="content dropDown">
 			<p>
 				<?php the_sub_field('fancy_bullet_points_picAndText_repeater_dropDownContent'); ?>
 			</p>
