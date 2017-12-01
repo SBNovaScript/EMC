@@ -4,7 +4,7 @@
 <h1 class="big_text" style="margin-bottom: 20px;"> <!-- Overwrote the big_text margin-bottom here, to include the subtitle text closer. -->
 	 <?php echo the_sub_field('wordBar_text') ?>
 </h1>
-<h4>
+<h4 style="margin-bottom: 100px;">
 	<?php echo the_sub_field('subtitle_text') ?>
 </h4>
 
