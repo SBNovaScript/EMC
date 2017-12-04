@@ -14,172 +14,68 @@ Version:        0.1.0
 
 	@import url("../twentyseventeen/style.css");
 
-/* End of parent css */
+	
+	
+/**************************************************************************************************
+                                                Index
+General code
+	Navigation 
+		Pull out menu
+		Subpage nav bar
+	
+	Footer
+	Home page video header
+	Word bar (the one with big text and buttons)
+	Pink Box (The one with solid background color and text and link)
+	Mission Statement block
+		Video block - Modifies mission statement
+	Pic and Text 
+		Fancy Bullet Points
+	Mid Text
+	Two Images
+	Spacer
+	Gallery
+		Basic gallery
+		Linked gallery
+
+Meta Queries 
+	Min width 480px - bigger than 480px. Bigger than Mobile
+		Footer
+	Min width 768 - Bigger than 768px. Ipad and bigger
+		Navigation 
+		Footer
+		Fancy bullet points
+		Mission div
+
+Graveyard of dead code
+	Styles relating to the EII buttons on the subpage nav bar
+	Meta queries relating to changing the spacing on smaller screens that are now obsolete
+	Styles for the 3 colored boxes on the pull out menu that we aren't using any more
+	Styles for the project slider that never was
+	Styles for the project grid that died
+	Styles for the 4 item expander that we are no longer using
+	Stuff for broken 3 project grid
+
+**************************************************************************************************/
 
 /**Background image**/
+
 
 /*
 .site-content-contain
 	background-image: url("https://image.ibb.co/nDYjYG/EMCsite_Background_06.jpg"); /*TODO Can't currenly add Pete's background becouse it exceeds maximum upload sizesso I'm hosting it elsewhere for now*/
 
-/** FOOTER CSS **/
 
-/*The footer uses flex box layout to have 3 columbs, 2 fixed, on resizes based on screen size*/
 
 /*This section will be used by default and on tiny screens */
 
-.footer {
-    width: 100%;
-    margin-left:0;
-    background-color:#1E1919;
-    color:white;
-    display:block;
-}
 
-.fixed-col div{
-	display:inline-block;
-	
-}
-.varible-col {
-    display:none;
-}
-.wrap1{
-	width:100%;
-}
-
-.final-item{
- padding-bottom:30px;
-}
-
-.fixed-col {
-    width:70%;
-    margin-left:15%;
-}
-
-/*Styles links*/
-.fixed-col a{
-  color:white;
-  text-decoration:none;
-  
-}
-
-
-.varible-col img{
-  max-width:200px; 
-  
-}
-
-/*When screen is greater then 768px */
-@media screen and (min-width: 768px) {
-.footer {
-  width: 70%;
-	margin-left:15%;
-  display:flex;
- }
-}
-
-/*When screen is greater then 480px */
-@media screen and (min-width: 650px) {
-   .varible-col {
-    flex: 1 auto; /*Lets this colum resize based on screen*/
-    display: flex;
-	/*Center horozontally and vertically*/
-    justify-content: center; 
-    align-items: center; 
-	}
-	.footer {
-		display:flex;
-	}
- 
-	.fixed-col {
-		max-width: 200px; /*control how big it can get while letting it shrink on smaller screens*/
-		padding:15px;
-		padding-top:15;
-		padding-right:0;
-		margin-left:30px;
-}
-
-}
-
-footer{
-	width:100%;	
-	background-color:#1E1919;
-}   
-
-.social-navigation{
-	text-align:center;
-}
-
-/** CSS FOR WORD BAR **/
-#EII_bar{
-  font-family: sans-serif;
-  font-size:20px;
-  text-align:center;
-}
-
-#EII_bar h1{
-	margin-bottom:100px;
-	margin-top:100px;
-}
-
-.word{
-  padding:30px;
-  background-color:#528BB9;
-  display:inline-block;
-  text-decoration:  none;
-  color:white;
-}
-
-.word:hover{
-  outline:1px solid #B3B3B3;
-  color:white;
-}
-
-#block2{
-  margin-left:5%;
-  margin-right:5%;
-  background-color:#58C3EB;
-}
-#block3{
-  background-color:#ED686B;
-}
-
-.big_text{
-	color:black;
-	font-size: 75px;
-}
-
-/** Pink Box code **/
-#pink_block{
-  background-color:#FF7869;
-  width: 100%;
-  height:500px;
-  color:white;
-  text-align:center;
-}
-
-#pink_block_content{
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%);
-}
-#pink_block a{
-  text-decoration:underline;
-  color:white;
-  font-size:20px;
-}
-
-.big_text2{
-  font-size: 75px;
-  text-align:center;
-  vertical-align:center;
-}
 
 /**Navagation CSS */
 
 /*I got most of the slide out menu stuff from 3wschools*/
 
-/*This element has a width of 0 which is set to 25% when the menu is clicked using javascript in navagation-top.php*/
+/*This element has a width of 0 which is set to 100% when the menu is clicked using javascript in navagation-top.php*/
 .sidenav {
     height: 100%;
     width: 0;
@@ -238,39 +134,6 @@ footer{
 #closeNav:hover{
 	color:#ED686B;
 }
-/*Make the menu appear more centered and restrict width so pink highlight looks better*/
-/*make left margin smaller for menu items on smaller screens*/
-@media screen and (min-width: 767px) {
-.js .main-navigation ul, .js .main-navigation ul ul, .js .main-navigation > div > ul{
-	margin-left:40%;
-	max-width:200px;
-}
-}
-
-/*Make the three colored boxes at the bottom of the menu */
-.three-boxes{
-  width:60%;
-  margin-left:20%;
-  text-align:center;
-  bottom:0;
-  margin-bottom:20%;
-}
-.three-boxes div{
-  width:20px;
-  height:20px;
-  display:inline-block;
-  background-color:#528BB9;
-  border-radius: 2px;
-}
-.three-boxes #center{
-  background-color:#58C3EB;
-  margin-left: 20%;
-  margin-right:20%;
-}
-
-.three-boxes #end{
-  background-color:#ED686B;
-}
 
 /*This div tints the rest of the screen when the menu slides in*/
 #darkMask {
@@ -284,79 +147,15 @@ footer{
 	width:0%;
 	transition: 0; /*if this is changed from 0 it will do a cool slide out effect*/
 }
-
-
-
-/*Stop the play pause button from displaying on the video header (This can't be removed in HTML since it is built into wordpress)*/
-#wp-custom-header-video-button {
-    display: none;
-  }
-
-/*Style for projects slider */
-.carousel-control.left, .carousel-control.right {
-   background-image:none !important;
-   filter:none !important;
+/*Fix a couple of bugs from the parent theme that cause the menu to disapear or have a weird border on smaller screens*/
+.js .main-navigation ul, .main-navigation .menu-item-has-children > a > .icon, .main-navigation .page_item_has_children > a > .icon, .main-navigation ul a > .icon {
+    display: inline-block;
+}
+.main-navigation li {
+    border-bottom: none;
 }
 
-/*Style for 3 by 3 project grid*/
-.col-sm-4 p{
-  max-width:300px;
-}
-.row{
-  margin-top:30px;
-}
-.projects-page img{
-	margin-top:30px;
-}
-
-.projects-page h2{
-	padding-top:0px;
-}
-
-
-/*Navagation for subpages style */
-.main-navigation .word{
-	padding-top:30px;
-	
-}
-
-.main-navigation .word{
-	display:inline-block;
-	padding-left:3%;
-	padding-right: 3%;
-	padding-top:7px;
-	padding-bottom:7px;
-	font-size:16px;
-	color:white;
-	
-}
-
-.main-navigation .word:hover{
-	color:white;
-	text-decoration:none;
-}
-
-.main-navigation #block2{
-	margin-left:1%;
-	margin-right:1%;
-}
-
-/*Navagation for subpages style */
-.main-navigation .word{
-	display:inline-block;
-	padding-left:4%;
-	padding-right: 4%;
-	padding-top:8px;
-	padding-bottom:8px;
-	font-size:16px;
-	color:white;
-	
-}
-
-.main-navigation #block2{
-	margin-left:1%;
-	margin-right:1%;
-}
+/*Navagation bar for subpages*/
 
 .main-navigation #title{
 	font-size:24px;
@@ -365,12 +164,10 @@ footer{
 	margin-right:2%;
 	color:#2f2f30;
 }
-
-#EII_bar_nav{
-	display:inline;
-	margin-left:5%;
+.navigation-top{
+	border-bottom:none;
+	border-top:none;
 }
-
 .slideOutIcon{
 	color:#535354;
 	font-weight:bold;
@@ -378,91 +175,146 @@ footer{
 	color:black;
 }
 
-@media screen and (max-width: 998px) {
-	#EII_bar_nav{
-		margin-left:1%;
-	}
-	.main-navigation #title{
-		margin-left:1%;
-		margin-right:1%;
-	}
-
-}
-
-@media screen and (max-width: 790px) {
-	#EII_bar_nav{
-		display:block;
-	}
-
-}
-
-/*https://stackoverflow.com/questions/15757036/creating-a-zoom-effect-on-an-image-on-hover-using-css*/
-
-.projects-page img{
-	margin-top:30px;
-    -webkit-transition: all 0.5s ease; /* Safari and Chrome */
-  	-moz-transition: all 0.5s ease; /* Firefox */
-  	-o-transition: all 0.5s ease; /* IE 9 */
-  	-ms-transition: all 0.5s ease; /* Opera */
-  	transition: all 0.5s ease;
-}
-
-.projects-page img:hover{
-	margin-top:30px;
-    -webkit-transform:scale(1.10); /* Safari and Chrome */
-    -moz-transform:scale(1.10); /* Firefox */
-    -ms-transform:scale(1.10); /* IE 9 */
-    -o-transform:scale(1.10); /* Opera */
-     transform:scale(1.10);
-}
-
-
+/*fix the issue with extra spacing on sup page nav bar*/
 .sub-page-header{
-	margin-top:60px;
+	margin-top:0px;
+}
+/*END NAV SECTION*/
+
+/** FOOTER CSS **/
+
+/*The footer uses flex box layout to have 3 columbs, 2 fixed, on resizes based on screen size*/
+.footer {
+    width: 100%;
+    margin-left:0;
+    background-color:#1E1919;
+    color:white;
+    display:block;
 }
 
-/*It may not be elegent but this morass of meta querys fixes a couple of nasty issues that occor on smaller screens*/
-
-@media screen and (max-width: 1071px) {
-	/*This one just changes the spacing and element sizes so the layout works a bit longer*/
-	#EII_bar_nav{
-		margin-left:1%;
-	}
-	.main-navigation #title{
-		margin-left:1%;
-		margin-right:1%;
-	}
-
+.fixed-col div{
+	display:inline-block;
+	
 }
-@media screen and (max-width: 914px) {
-	/*This moves the menu into the mobil configuration and adds double top margin becouse of an error that causes menu to appear off screen*/
-	#EII_bar_nav{
-		display:block;
-		text-align:center;
-		margin-top:15px;
-	}
-	.main-navigation #title{
-		text-align:center;
+.varible-col {
+    display:none;
 }
-	.sub-page-header{
-	margin-top:120px;
+.wrap1{
+	width:100%;
 }
 
-}
-@media screen and (max-width: 767px) {
-	/*This removes the extra spacing since the themes default spacing has kicked in at this point and the extra space is no longer nessary*/
-	.sub-page-header{
-		margin-top:0px;
-	}
-
+.final-item{
+ padding-bottom:30px;
 }
 
-.projects-page h2{
-	padding-top:0px;
+.fixed-col {
+    width:70%;
+    margin-left:15%;
 }
 
+/*Styles links*/
+.fixed-col a{
+  color:white;
+  text-decoration:none;
+  
+}
 
-/*Mission Statement block */
+.varible-col img{
+  max-width:200px; 
+  
+}
+
+footer{
+	width:100%;	
+	background-color:#1E1919;
+}   
+
+.social-navigation{
+	text-align:center;
+}
+/*END FOOTER SECTION*/;
+
+
+/**HOME PAGE VIDEO HEADER**/
+
+/*Stop the play pause button from displaying on the video header (This can't be removed in HTML since it is built into wordpress)*/
+#wp-custom-header-video-button {
+    display: none;
+  }
+  
+/*END HOME PAGE VIEO SECTION*/
+
+
+/**WORD BAR **/
+#EII_bar{
+  font-family: sans-serif;
+  font-size:20px;
+  text-align:center;
+}
+
+#EII_bar h1{
+	margin-bottom:100px;
+	margin-top:100px;
+}
+
+.word{
+  padding:30px;
+  background-color:#528BB9;
+  display:inline-block;
+  text-decoration:  none;
+  color:white;
+}
+
+.word:hover{
+  outline:1px solid #B3B3B3;
+  color:white;
+}
+
+#block2{
+  margin-left:5%;
+  margin-right:5%;
+  background-color:#58C3EB;
+}
+#block3{
+  background-color:#ED686B;
+}
+
+.big_text{
+	color:black;
+	font-size: 75px;
+}
+
+/*END WORD BAR SECTION/
+
+/** PINK BOX **/
+#pink_block{
+  background-color:#FF7869;
+  width: 100%;
+  height:500px;
+  color:white;
+  text-align:center;
+}
+
+#pink_block_content{
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+#pink_block a{
+  text-decoration:underline;
+  color:white;
+  font-size:20px;
+}
+
+.big_text2{
+  font-size: 75px;
+  text-align:center;
+  vertical-align:center;
+}
+/*END PINK BOX SECTION*/
+
+
+/**MISSION STATEMENT**/
 .missionDiv{
 	color:black;
 	width:100%;
@@ -500,6 +352,7 @@ footer{
   padding-top:20px;
   padding-bottom:20px;
   min-width:150px;
+  width:70%;
 }
 
 .missionDiv .content .links{
@@ -526,6 +379,7 @@ footer{
 }
 .missionDiv .content .title .red{
   border-bottom:5px solid #ED686B;
+  margin-top:20px;
 }
 .missionDiv .content .links .blue{
  border:1px solid #528BB9;
@@ -534,44 +388,47 @@ footer{
  border:1px solid #58C3EB;
    margin-left:5%;
   margin-right:5%;
+  margin-top:20px;
 }
 .missionDiv .content .links .red{
  border:1px solid #ED686B;
+ margin-top:20px;
 }
 
 .missionDiv .content .links .blue:hover{
  background-color:#528BB9;
- color:white;
 }
 .missionDiv .content .links .lightBlue:hover{
  background-color:#58C3EB;
-color:white;
 }
 .missionDiv .content .links .red:hover{
  background-color:#ED686B;
+}
+.missionDiv .content .button:hover a{
  color:white;
 }
 
-/*Ajust the buttons so they display full width on smaller screens*/
-@media screen and (max-width: 650px) /* Mobile */ {
-	.missionDiv .content .links .button{
-		width:70%;
-	}
-  
-  /*Add extra padding to elements except first one smaller screens. Addeng padding to all messes up spacing so only red and lightblue are set*/
-	.missionDiv .content .links .red{
-		margin-top:20px;
-	}
-	.missionDiv .content .links .lightBlue{
-		margin-top:20px;
-	}
+
+
+/*Video version of block*/
+.video_block{
+	width:100%;
 }
+iframe{
+	width:100%;
+}
+.test-custom-media{
+	margin-bottom:3%
+}
+/*END MISSION STATEMENT SECTION*/
 
 
-/*A block containing a large image with rounded corneres and a wysiwyg editor*/
+/*PIC AND TEXT
+A block containing a large image with rounded corneres and a wysiwyg editor*/
+
 .picAndText{
   width:100%;
-  border:.5px solid #c6c6c6;
+ /* border:.5px solid #c6c6c6;*/
   border-radius:4px;
   color:black;
 }
@@ -583,192 +440,13 @@ color:white;
   margin-left:10%;
   margin-bottom:20px;
   margin-top:20px;
-}
-/*Mid sized text blocks that appear between other elements*/
-.midText{
-  width:60%;
-  margin-left:20%;
-  margin-top:80px;
-  margin-bottom:80px;
-
-  font-size:18px;
-}
-.midText h1{
-	  color:black;
-}
-
-.twoImages{
-  width:100%;
-}
-.twoImages div{
-  height:300px;
-  display:inline-block;
-  border-radius:4px;
-  width:49%;
-}
-.twoImages .small{
-  width:37%;
-  
-}
-.twoImages .big{
-  width:61.5%;
-}
-.twoImages img{
-  width:100%;
-  height:100%;
-  overflow:hidden;
-  border-radius:4px;
-}
-
-p .projectsPage {
-	padding-bottom: 2em; /*added for projects page*/
-}
-
-.video_block{
-	width:100%;
-}
-
-/*Styling for the anamated expander element on the project page. Its not perfect but it basically works. We might want to add some jquery later to fade in the text so its less jaring*/
-
-.four_item_expander{
-  width:100%;
-  height:500px;
-
-  vertical-align: middle;
   display: flex;
   align-items: center;
-      text-align: center;
-
-}
-.four_item_expander div{
-  width:25%;
-  display:inline-block;
-  vertical-align: middle;
-  -webkit-transition: width .5s; /* Safari */
-    transition: width .5s;
-}
-.four_item_expander div img{
-  width:100%;
-  -webkit-transition: width .01s; /* Safari */
-    transition: width .01s;
-    -webkit-transition: height 1s; /* Safari */
-    transition: height 1s;
-}
-.four_item_expander div h4{
-  font-size:18px;
-  margin:10px;
+  height:150%;
+  min-height:768px;
 }
 
-/*Hide it by default so it can be showen by jquery*/
-.four_item_expander div .hiddenWidth{
-  -webkit-transition: width .01s; /* Safari */
-    transition: width .01s;
-    display:none;
-    width:100%;
-	text-align:center;
-}
-
-/*This element is expanded on load so set its size and other elements to propper values*/
-.four_item_expander .card:nth-child(3){
-  width:50%;
-}
-.four_item_expander .card:nth-child(3) .hiddenWidth{
-  display:inline-block;
-}
-
-/*SECTION ENDS*/
-
-.three_project{
-	padding: 0px !important;
-	margin: 0px !important;
-	
-}
-
-.three_projects_img{
-		max-height: 300px;
-}
-
-.test-custom-media{
-	margin-bottom:3%
-}
-
-
-/*Spacer*/
-.spacer{
-	height:60px;
-	width:100%;
-}
-
-iframe{
-	width:100%;
-}
-
-/*Style the fancy linked gallery*/
-.gallery{
-  box-sizing:border-box;
--moz-box-sizing:border-box;
-}
-.gallery .innerWrap{
-  width: calc(100% * 1/3 - 3%); /*Calculates the width of each elemnet as 1/3 of the space - 3% margin*/
-  position: relative;
-  text-align: center;
-  display:inline-block;
-  margin-bottom:10px;
-}
-
-.gallery .innerWrap:nth-child(3n+2){ /*Targets and adds extra spacing around the center elemtn of each row*/
-  margin-left:1.5%; 
-  margin-right:1.5%;
-}
-.gallery .innerWrap span{ /*Positions the text and hides it*/
-  position: absolute;
-   top: 50%;
-   left: 50%;
-   transform: translate(-50%, -50%);
-   color:white;
-   display:none;
-}
-
-/*Make the text show up on hover*/
-.gallery .innerWrap:hover span{
-  display:inline-block;
-}
-
-.gallery .innerWrap img{
-  width:100%;
-  -webkit-filter: brightness(100%);
-	-moz-filter: brightness(100%);
-	-o-filter: brightness(100%);
-	-ms-filter: brightness(100%);
-	filter: brightness(100%);
-	transition: all .5s ease;
-}
-
-.gallery .innerWrap:hover img{
-	/*Darken the image on hover. No mask means less weirdness*/
-   -webkit-filter: brightness(40%);
-	-moz-filter: brightness(40%);
-	-o-filter: brightness(40%);
-	-ms-filter: brightness(40%);
-	filter: brightness(40%);
-}
-
-/*Basic image gallery*/
-.gallery{
-	width:100%;
-}
-
-.gallery .gridImg{
-	width: calc(100% * 1/3 - 3%); /*Calculates the width of each elemnet as 1/3 of the space - 3% margin*/
-	margin-bottom:10px;
-}
-
-.gallery .gridImg:nth-child(3n+2){ /*Targets and adds extra spacing around the center elemtn of each row*/
-  margin-left:1.5%; 
-  margin-right:1.5%;
-}
-
-/*Fancy bullet points*/
+/*FANCY BULLET POINTS*/
 .fancy_drop_down_menu ul{
   list-style: none;
   padding:0;
@@ -820,15 +498,432 @@ cursor: pointer;
   margin-top:0;
   padding-top:0;
 }
+/*END OF PIC AND TEXT*/
 
-.fancy_drop_down_menu p{
- /* margin-left:50px;*/
+
+/**MID TEXT**/
+
+/*Mid sized text blocks that appear between other elements*/
+.midText{
+  width:60%;
+  margin-left:20%;
+  margin-top:80px;
+  margin-bottom:80px;
+
+  font-size:18px;
+}
+.midText h1{
+	  color:black;
 }
 
-/*Add back the margins on bigger screens*/
-@media screen and (min-width: 768px) /* Mobile */ {
+/*END OF MID TEXT*/
+
+
+/**TWO IMAGES**/
+
+/*Block containing two images. PHP is used so admin can control which is bigger*/
+.twoImages{
+  width:100%;
+}
+.twoImages div{
+  height:300px;
+  display:inline-block;
+  border-radius:4px;
+  width:49%;
+}
+.twoImages .small{
+  width:37%;
+  
+}
+.twoImages .big{
+  width:61.5%;
+}
+.twoImages img{
+  width:100%;
+  height:100%;
+  overflow:hidden;
+  border-radius:4px;
+}
+
+/*END OF TWO IMAGES*/
+
+/*SPACER*/
+.spacer{
+	height:60px;
+	width:100%;
+}
+/*END OF SPACER*/
+
+
+/*GALLERY, LINKED AND BASIC*/
+.gallery{
+	box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	width:100%;
+}
+
+/*Basic image gallery*/
+
+.gallery .gridImg{
+	width: calc(100% * 1/3 - 3%); /*Calculates the width of each elemnet as 1/3 of the space - 3% margin*/
+	margin-bottom:10px;
+}
+
+.gallery .gridImg:nth-child(3n+2){ /*Targets and adds extra spacing around the center elemtn of each row*/
+  margin-left:1.5%; 
+  margin-right:1.5%;
+}
+
+
+/*Linked image gallery */
+
+.gallery .innerWrap{
+  width: calc(100% * 1/3 - 3%); /*Calculates the width of each elemnet as 1/3 of the space - 3% margin*/
+  position: relative;
+  text-align: center;
+  display:inline-block;
+  margin-bottom:10px;
+}
+
+
+.gallery .innerWrap span{ /*Positions the text and hides it*/
+  position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   color:white;
+   display:none;
+}
+
+/*Make the text show up on hover*/
+.gallery .innerWrap:hover span{
+  display:inline-block;
+}
+
+.gallery .innerWrap img{
+  width:100%;
+  -webkit-filter: brightness(100%);
+	-moz-filter: brightness(100%);
+	-o-filter: brightness(100%);
+	-ms-filter: brightness(100%);
+	filter: brightness(100%);
+	transition: all .5s ease;
+}
+
+.gallery .innerWrap:hover img{
+	/*Darken the image on hover. No mask means less weirdness*/
+   -webkit-filter: brightness(40%);
+	-moz-filter: brightness(40%);
+	-o-filter: brightness(40%);
+	-ms-filter: brightness(40%);
+	filter: brightness(40%);
+}
+
+
+
+
+/*When screen is greater then 480px (bigger then most mobile phones) */
+@media screen and (min-width: 480px) {
+   .varible-col {
+    flex: 1 auto; /*Lets this colum resize based on screen*/
+    display: flex;
+	/*Center horozontally and vertically*/
+    justify-content: center; 
+    align-items: center; 
+	}
+	.footer {
+		display:flex;
+	}
+ 
+	.fixed-col {
+		max-width: 200px; /*control how big it can get while letting it shrink on smaller screens*/
+		padding:15px;
+		padding-top:15;
+		padding-right:0;
+		margin-left:30px;
+	}
+
+}
+/*When screen is greater then 768px (Ipad)*/
+@media screen and (min-width: 768px) /* Ipad and bigger*/ {
+	/*Add more spacing to pull out menu on larger screens and ristrict width*/
+	.js .main-navigation ul, .js .main-navigation ul ul, .js .main-navigation > div > ul{
+		margin-left:40%;
+		max-width:200px;
+	}
+	.sub-page-header{
+		margin-top:60px;
+	}
+
+/*Footer*/
+	.footer {
+		width: 70%;
+		margin-left:15%;
+		display:flex;
+	}
+	
+	
+/*Fancy bullet points*/
 	.fancy_drop_down_menu .dropDown{
 		margin-left:10%;
 		width:90%;
 `	}
+
+
+/*Mission Div*/
+	/*Make the mission div links smaller on bigger screens*/
+	.missionDiv .content .links .button{
+		width:25%;
+	}
+	
+	/*Remove extra padding on larger screens*/
+	.missionDiv .content .links .red{
+		margin-top:0;
+	}
+	.missionDiv .content .links .lightBlue{
+		margin-top:0;
+	}
+
+	
+	
 }
+
+/*THE GRAVEYARD OF DEAD CODE*/
+/*Code we're not using right now but may need in future*/
+
+/*Style the immerge innovate inspire on the nav bar of sub pages*/
+/**
+
+.main-navigation #block2{
+	margin-left:1%;
+	margin-right:1%;
+}
+
+#EII_bar_nav{
+	display:inline;
+	margin-left:5%;
+}
+
+.main-navigation .word{
+	display:inline-block;
+	padding-left:4%;
+	padding-right: 4%;
+	padding-top:8px;
+	padding-bottom:8px;
+	font-size:16px;
+	color:white;
+	padding-top:30px;
+}
+
+.main-navigation .word:hover{
+	color:white;
+	text-decoration:none;
+}
+
+@media screen and (max-width: 790px) {
+	#EII_bar_nav{
+		display:block;
+	}
+
+}
+
+@media screen and (max-width: 998px) {
+	#EII_bar_nav{
+		margin-left:1%;
+	}
+	.main-navigation #title{
+		margin-left:1%;
+		margin-right:1%;
+	}
+
+}
+
+@media screen and (max-width: 1071px) {
+	/*This one just changes the spacing and element sizes so the layout works a bit longer*/
+	/*
+	#EII_bar_nav{
+		margin-left:1%;
+	}
+	.main-navigation #title{
+		margin-left:1%;
+		margin-right:1%;
+	}
+
+}
+
+@media screen and (max-width: 914px) {
+	/*This moves the menu into the mobil configuration and adds double top margin becouse of an error that causes menu to appear off screen*/
+	
+	/*
+	#EII_bar_nav{
+		display:block;
+		text-align:center;
+		margin-top:15px;
+	}
+	.main-navigation #title{
+		text-align:center;
+}
+}
+*/
+
+
+
+/*Make the three colored boxes at the bottom of the menu
+ */
+/*
+.three-boxes{
+  width:60%;
+  margin-left:20%;
+  text-align:center;
+  bottom:0;
+  margin-bottom:20%;
+}
+.three-boxes div{
+  width:20px;
+  height:20px;
+  display:inline-block;
+  background-color:#528BB9;
+  border-radius: 2px;
+}
+.three-boxes #center{
+  background-color:#58C3EB;
+  margin-left: 20%;
+  margin-right:20%;
+}
+
+.three-boxes #end{
+  background-color:#ED686B;
+}*/
+
+/*Project grid*/
+
+
+/*Style for projects slider */
+/*
+.carousel-control.left, .carousel-control.right {
+   background-image:none !important;
+   filter:none !important;
+}
+*/
+
+/*Style for 3 by 3 project grid*/
+/*
+.col-sm-4 p{
+  max-width:300px;
+}
+.row{
+  margin-top:30px;
+}
+.projects-page img{
+	margin-top:30px;
+}
+
+.projects-page h2{
+	padding-top:0px;
+}
+
+/*https://stackoverflow.com/questions/15757036/creating-a-zoom-effect-on-an-image-on-hover-using-css*/
+
+/*
+The zoom effect for the project grid
+
+.projects-page img{
+	margin-top:30px;
+    -webkit-transition: all 0.5s ease; 
+  	-moz-transition: all 0.5s ease; 
+  	-o-transition: all 0.5s ease; 
+  	-ms-transition: all 0.5s ease; 
+  	transition: all 0.5s ease;
+}
+
+.projects-page img:hover{
+	margin-top:30px;
+    -webkit-transform:scale(1.10); 
+    -moz-transform:scale(1.10); 
+    -ms-transform:scale(1.10); 
+    -o-transform:scale(1.10); 
+     transform:scale(1.10);
+}
+
+
+
+.projects-page h2{
+	padding-top:0px;
+}
+*/
+
+/*Styling for the anamated expander element on the project page. Its not perfect but it basically works. We might want to add some jquery later to fade in the text so its less jaring*/
+
+/*
+.four_item_expander{
+  width:100%;
+  height:500px;
+
+  vertical-align: middle;
+  display: flex;
+  align-items: center;
+      text-align: center;
+
+}
+.four_item_expander div{
+  width:25%;
+  display:inline-block;
+  vertical-align: middle;
+  -webkit-transition: width .5s; 
+    transition: width .5s;
+}
+.four_item_expander div img{
+  width:100%;
+  -webkit-transition: width .01s; 
+    transition: width .01s;
+    -webkit-transition: height 1s; 
+    transition: height 1s;
+}
+.four_item_expander div h4{
+  font-size:18px;
+  margin:10px;
+}
+
+/*Hide it by default so it can be showen by jquery*/
+/*
+.four_item_expander div .hiddenWidth{
+  -webkit-transition: width .01s; 
+    transition: width .01s;
+    display:none;
+    width:100%;
+	text-align:center;
+}
+
+/*This element is expanded on load so set its size and other elements to propper values*/
+/*
+.four_item_expander .card:nth-child(3){
+  width:50%;
+}
+.four_item_expander .card:nth-child(3) .hiddenWidth{
+  display:inline-block;
+}
+
+
+p .projectsPage {
+	padding-bottom: 2em; /*added for projects page*/
+}
+
+
+/*More stuff for project grid*/
+/*
+.three_project{
+	padding: 0px !important;
+	margin: 0px !important;
+	
+}
+
+.three_projects_img{
+		max-height: 300px;
+}
+*/
+
+
+/*SECTION ENDS*/
+
+
+
