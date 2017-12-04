@@ -2,3 +2,4 @@ acf-export-2017-11-17 - added Two Project Layout (Steven)
 acf-export-2017-11-20 - Added the linked image grid (Amelia)
 acf-export-2017-11-27 - Added the fields nessary for the fancy bullet points. They are in a 
 repeter inside a flexible content in pic and text block (Amelia)
+acf-export-2017-12-01 - fixed wordbar subtext, and updated it's text. (Steven)
