@@ -25,7 +25,7 @@
 }
 </style>
 <nav id="site-navigation" class="main-navigation" role="navigation" aria-label="<?php esc_attr_e( 'Top Menu', 'twentyseventeen' ); ?>">
-
+<div class="subPage">
 
 <span class="slideOutIcon" style="cursor:pointer;" onclick="openNav()">&#9776;</span> <!--makes pull out menu bars-->
 <!--Why is this element broken-->
@@ -58,6 +58,7 @@
 	<?php if ( ( twentyseventeen_is_frontpage() || ( is_home() && is_front_page() ) ) && has_custom_header() ) : ?>
 		<a href="#content" class="menu-scroll-down"><?php echo twentyseventeen_get_svg( array( 'icon' => 'arrow-right' ) ); ?><span class="screen-reader-text"><?php _e( 'Scroll down to content', 'twentyseventeen' ); ?></span></a>
 	<?php endif; ?>
+</div>
 </nav><!-- #site-navigation -->
 
 

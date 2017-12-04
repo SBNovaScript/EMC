@@ -7,8 +7,11 @@ if( have_rows('pic_and_text_content') ):
 
 	// loop through all the rows of flexible content
 	while ( have_rows('pic_and_text_content') ) : the_row();
-		if( get_row_layout() == 'wysiwyg_editor_picAndText' ){
-			the_sub_field("content_editor_picandtext");
+		if( get_row_layout() == 'wysiwyg_editor_picAndText' ){?>
+				<div class="verical-center">
+					<?php the_sub_field("content_editor_picandtext");?>
+				</div>
+		<?php
 		}
 		if( get_row_layout() == 'fancy_bullet_points_picAndText' ){
 			get_template_part( 'template-parts/page/content', 'fancyBullets' );

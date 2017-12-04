@@ -1,7 +1,8 @@
 <!--TODO Fix the responcivity issues that occor with the links below about 1000px, also make the EMC name look better on smaller screens-->
 <div class="missionDiv">
 <div class="content">
-<h1 class="title"><span class="blue words">EMERGENT</span> <span class="lightBlue words">MEDIA</span> <span class="red words">CENTER</span></h1>
+
+<!--<h1 class="title"><span class="blue words">EMERGENT</span> <span class="lightBlue words">MEDIA</span> <span class="red words">CENTER</span></h1>-->
 
 <h2 class="subtitle"><?php the_sub_field('mission_statement_subtitle'); ?></h2>
 
