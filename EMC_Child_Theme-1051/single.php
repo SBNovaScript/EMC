@@ -72,9 +72,9 @@ if (have_posts()) : while (have_posts()) : the_post();
 		 if( get_row_layout() == 'pop_out' )
 			 get_template_part( 'template-parts/page/content', 'PopOut' ); 
 		 
-		 //The Projects block
-		 if( get_row_layout() == 'three_projects' )
-			 get_template_part( 'template-parts/page/content', 'projects' ); 
+		 //Two Project Layout
+		 if( get_row_layout() == 'two_projects' )
+			get_template_part( 'template-parts/page/content', 'twoProjects' );
 		 
 		 //The spacer block
 		 if( get_row_layout() == 'spacer_block' )
