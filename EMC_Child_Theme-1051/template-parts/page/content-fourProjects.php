@@ -13,6 +13,9 @@ if(have_rows('four_field_repeater') ):
 	while (have_rows('four_field_repeater') ): the_row();
 	
 		?>
+		
+	<div class="spacer" style="height: <?php the_sub_field("spacer_height");?>px;"  ></div>
+		
 	<div class="two-projects-outer" id="idtext-<?php echo $idtext; $idtext +=1; ?>">
 		<div class="w3-cell-row abc">
 		  <div class="two-projects-container w3-container w3-cell w3-cell-top w3-mobile col">
