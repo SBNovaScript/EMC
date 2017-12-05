@@ -36,7 +36,7 @@ if(have_rows('four_field_repeater') ):
 		</div>
 	</div>
 	
-	<div class="project-spacer" style="height: <?php the_sub_field("spacer_height");?>px;"  ></div>
+	<div class="spacer" style="height: <?php the_sub_field("spacer_height");?>px;"  ></div>
 	
 		<?php
 	endwhile;
