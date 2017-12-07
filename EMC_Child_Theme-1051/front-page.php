@@ -89,6 +89,10 @@ get_header(); ?>
 		if(get_row_layout() == 'linked_photo_gallery')
 			get_template_part( 'template-parts/page/content', 'linkedGrid' ); 
 		
+		//Four Project Layout
+		if( get_row_layout() == 'four_projects' )
+			get_template_part( 'template-parts/page/content', 'fourProjects' );
+		
 		 
 		endwhile; // close the loop of flexible content
 	endif; // close flexible content conditional

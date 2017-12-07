@@ -23,7 +23,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="profile" href="http://gmpg.org/xfn/11">
 
-
 <!--TODO: There is an issue with the menu positioning on sub pages with sizes less then 780px. Some css in a meta query is setting the margin top too big on smaller screens -->
 <?php wp_enqueue_script("jquery"); ?>
 <?php wp_head(); ?>

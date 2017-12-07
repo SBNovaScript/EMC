@@ -570,6 +570,66 @@ text-align:left;
 
 /*END OF TWO IMAGES*/
 
+/* FOUR PROJECTS */
+
+.fade-in-layout{
+	opacity:0;
+}
+
+/*.projects-wrap{
+	margin-left:2.5% !important;
+	margin-right:5%
+} Note: I change the margins for the projects page here.*/
+
+.two-projects-outer{
+	width:45vw; /* was 90vw for 2.5% left margin */
+}
+
+.two-projects-img{
+	max-width: none;
+	width:100%;
+	height:auto;
+}
+
+.two-projects-container{
+	position: relative;
+	width: 50%;
+}
+
+.two-projects-overlay{
+	position:absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 100%;
+	width: 100%;
+	opacity: 0;
+	transition: .5s ease;
+	background-color: black;
+}
+
+.two-projects-container:hover .two-projects-overlay{
+	opacity: 0.75;
+}
+
+.two-projects-text{
+	color: white;
+	font-size: 20px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+}
+
+.project-spacer{
+	height: 150px;
+	width: 100%
+}
+
+/* END OF TWO PROJECTS */
+
 /*SPACER*/
 .spacer{
 	height:60px;

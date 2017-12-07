@@ -18,7 +18,7 @@
 
 get_header(); ?>
 
-<div class="wrap">
+<div class="wrap projects-wrap">
 	<div id="primary" class="content-area">
 	
 		<main id="main" class="site-main" role="main">
@@ -44,9 +44,11 @@ if (have_posts()) : while (have_posts()) : the_post();
 		// PROJECTS GRID
 		if( get_row_layout() == 'project_grid' )
 			get_template_part( 'template-parts/page/content', 'projectGrid' );
+		
 		//THREE PROJECT LAYOUT
 		if( get_row_layout() == 'three_projects' )
 			get_template_part( 'template-parts/page/content', 'projects' );
+		
 		//PHOTO GALLERY GRID
 		if( get_row_layout() == 'photo_gallery' )
 			get_template_part( 'template-parts/page/content', 'gallery' );
@@ -58,6 +60,7 @@ if (have_posts()) : while (have_posts()) : the_post();
 		//PIC AND TEXT BLOCK
 		if( get_row_layout() == 'pic_and_text' )
 			 get_template_part( 'template-parts/page/content', 'picAndText' ); 
+		 
 		//MID SIZED TEXT WITH LOTS OF SPACING
 		if( get_row_layout() == 'mid_text' )
 			 get_template_part( 'template-parts/page/content', 'midText' ); 
@@ -74,6 +77,14 @@ if (have_posts()) : while (have_posts()) : the_post();
 		 if( get_row_layout() == 'pop_out' )
 			 get_template_part( 'template-parts/page/content', 'PopOut' ); 
 		 
+		 //Two Project Layout
+		 if( get_row_layout() == 'two_projects' )
+			get_template_part( 'template-parts/page/content', 'twoProjects' );
+		
+		//Four Project Layout
+		if( get_row_layout() == 'four_projects' )
+			get_template_part( 'template-parts/page/content', 'fourProjects' );
+		 
 		endwhile; // close the loop of flexible content
 	endif; // close flexible content conditional
 
@@ -84,4 +95,4 @@ endwhile; endif; // close the WordPress loop ?>
 	</div><!-- #primary -->
 </div><!-- .wrap -->
 
-<?php get_footer();
+<?php get_footer(); ?>
