@@ -51,10 +51,10 @@
 		<?php endif; ?>
 	" role="banner">
 
-	<!--For some reson the title and discription are linked from this file-->
-		<?php get_template_part( 'template-parts/header/header', 'image' ); ?>
-
-		<?php if ( has_nav_menu( 'top' ) ) : ?>
+	
+	
+	
+			<?php if ( has_nav_menu( 'top' ) ) : ?>
 			<div class="navigation-top" >
 				<div class="wrap">
 				
@@ -68,6 +68,12 @@
 				</div><!-- .wrap -->
 			</div><!-- .navigation-top -->
 		<?php endif; ?>
+		
+	<!--For some reson the title and discription are linked from this file-->
+	<?php get_template_part( 'template-parts/header/header', 'image' ); ?>
+		
+		
+
 
 	</header><!-- #masthead -->
 

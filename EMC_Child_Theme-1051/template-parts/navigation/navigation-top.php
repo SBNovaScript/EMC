@@ -21,7 +21,7 @@
 ?>
 <nav id="site-navigation" class="main-navigation" role="navigation" aria-label="<?php esc_attr_e( 'Top Menu', 'twentyseventeen' ); ?>">
 
-<span class="slideOutIcon" style="font-size:30px;cursor:pointer;color:black" onclick="openNav()">&#9776;</span> <!--makes pull out menu bars-->
+<span class="slideOutIcon" style="font-size:30px;cursor:pointer;" onclick="openNav()">&#9776;</span> <!--makes pull out menu bars-->
 	
 <!--TODO: I have no idea why commenting out the old menu icon makes the page discription collapse, probbly something with spacing-->
 <div id="mySidenav" class="sidenav"><!--This div is what slides out -->

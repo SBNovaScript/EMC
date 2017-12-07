@@ -90,7 +90,7 @@ function openNav() {
 	*/
 		console.log("meunu opwn");
 		document.getElementById("mySidenav").style.width = navWidth;
-		document.getElementById("darkMask").style.width = darkWidth;
+		/*document.getElementById("darkMask").style.width = darkWidth;*/
 }
 
 function closeNav() {
