@@ -102,43 +102,89 @@ function emc_customizer( $wp_customize ){
 
   //EDIT CONTACT US TEXT IN FOOTER
   // Setting
-  $wp_customize->add_setting( 'contactText', array(
+  $wp_customize->add_setting( 'overFooterText', array(
     'default' => __(
-		'<a href="#">Ketri Tracy,</a> 
-		Busness devlopment manager, 
-		Emergent Media Center,
-        Champlain College<br> 
-		802-856-8438<br>
-		<a href ="#"> ktracy@champlain.edu</a>', 
+		'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad', 
+		'EMC_Theme')
+  ) );
+  $wp_customize->add_setting( 'overFooterLinkText', array(
+    'default' => __(
+		'contact', 
+		'EMC_Theme')
+  ) );
+  $wp_customize->add_setting( 'overFooterLinkLocation', array(
+    'default' => __(
+		'/', 
 		'EMC_Theme')
   ) );
   
+  
+  // Setting
+  $wp_customize->add_setting( 'footerCol1', array(
+    'default' => __(
+		'<p>Long McLongname</p> 
+		<p>Position</p> 
+		<p>(802) 555-5555</p>
+		<p>example@example.edu</p>', 
+		'EMC_Theme')
+  ) );
+  $wp_customize->add_setting( 'footerCol2', array(
+    'default' => __(
+		'<p>Long McLongname</p> 
+		<p>Position</p> 
+		<p>(802) 555-5555</p>
+		<p>example@example.edu</p>', 
+		'EMC_Theme')
+  ) );
+  $wp_customize->add_setting( 'footerCol3', array(
+    'default' => __(
+		'<p>Long McLongname</p> 
+		<p>Position</p> 
+		<p>(802) 555-5555</p>
+		<p>example@example.edu</p>', 
+		'EMC_Theme'
+		)
+  ) );
+  
     //control
- $wp_customize->add_control( 'contactText', array(
-    'label'    => __( 'Contact Text', 'EMC_Theme' ),
+ $wp_customize->add_control( 'footerCol1', array(
+    'label'    => __( 'Column 1', 'EMC_Theme' ),
     'section'  => 'footerText',
-    'settings' => 'contactText',
+    'settings' => 'footerCol1',
+    'type'     => 'textarea'
+  ) );
+     //control
+ $wp_customize->add_control( 'footerCol2', array(
+    'label'    => __( 'Column 2', 'EMC_Theme' ),
+    'section'  => 'footerText',
+    'settings' => 'footerCol2',
+    'type'     => 'textarea'
+  ) );
+     //control
+ $wp_customize->add_control( 'footerCol3', array(
+    'label'    => __( 'Column 3', 'EMC_Theme' ),
+    'section'  => 'footerText',
+    'settings' => 'footerCol3',
     'type'     => 'textarea'
   ) );
   
-  //EDIT PARTNERSHIP TEXT IN FOOTER
-  // Setting
-  $wp_customize->add_setting( 'partnerText', array(
-    'default' => __('
-	  <a href="#">Test test test test def</a>
-      <a href="#">Test test test test rff</a>
-      <a href="#">Test test test test test</a>
-      <a href="#">Test test test test stuff</a>',
-
-	  'EMC_Theme')
-  ) );
-
-
-   $wp_customize->add_control( 'partnerText', array(
-    'label'    => __( 'Partnership Text', 'EMC_Theme' ),
-	 'section'  => 'footerText',
-    'settings' => 'partnerText',
+  $wp_customize->add_control( 'overFooterText', array(
+    'label'    => __( 'Over Footer Text', 'EMC_Theme' ),
+    'section'  => 'footerText',
+    'settings' => 'overFooterText',
     'type'     => 'textarea'
+  ) );
+  $wp_customize->add_control( 'overFooterLinkText', array(
+    'label'    => __( 'Over Footer Link Text', 'EMC_Theme' ),
+    'section'  => 'footerText',
+    'settings' => 'overFooterLinkText',
+    'type'     => 'text'
+  ) );
+   $wp_customize->add_control( 'overFooterLinkLocation', array(
+    'label'    => __( 'Over Footer Link Text', 'EMC_Theme' ),
+    'section'  => 'footerText',
+    'settings' => 'overFooterLinkLocation',
+    'type'     => 'text'
   ) );
   
  
