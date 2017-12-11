@@ -56,6 +56,7 @@ Graveyard of dead code
 	Styles for the 4 item expander that we are no longer using
 	Stuff for broken 3 project grid
 	The code that uste to make my beautiful underlined words on mission statement block
+	The code that made the old slightly broken footer
 
 **************************************************************************************************/
 
@@ -217,54 +218,46 @@ Graveyard of dead code
 /** FOOTER CSS **/
 
 /*The footer uses flex box layout to have 3 columbs, 2 fixed, on resizes based on screen size*/
-.footer {
-    width: 100%;
-    margin-left:0;
-    background-color:#1E1919;
-    color:white;
-    display:block;
-}
-
-.fixed-col div{
-	display:inline-block;
-	
-}
-.varible-col {
-    display:none;
-}
-.wrap1{
-	width:100%;
-}
-
-.final-item{
- padding-bottom:30px;
-}
-
-.fixed-col {
-    width:70%;
-    margin-left:15%;
-}
-
-/*Styles links*/
-.fixed-col a{
-  color:white;
-  text-decoration:none;
-  
-}
-
-.varible-col img{
-  max-width:200px; 
-  
-}
-
 footer{
-	width:100%;	
-	background-color:#1E1919;
-}   
+  background-color:black;
+  color:white;
+  width:100%;
+}
+
+footer .collLayout{
+  display:block;
+  width:90%;
+  margin-left:5%;
+  padding-top:50px;
+  display: block;
+  flex-direction: row;
+  font-size:20px;
+}
+footer .collLayout .coll{
+  display:block;
+  flex:1;
+  width: 100%;
+  margin-bottom:60px;
+  border-bottom:1px solid white;
+}
+footer .collLayout .coll:nth-child(3){
+  border-bottom:1px solid black; /*For some reaseon removing the border messes up spacing so I set it to the background color on the last element*/
+  margin-bottom:;
+}
 
 .social-navigation{
 	text-align:center;
+	width:100%;
+	margin-top:25px;
+	margin-bottom:50px;
 }
+/*
+
+
+*/
+
+
+
 /*END FOOTER SECTION*/;
 
 
@@ -321,27 +314,31 @@ footer{
 
 /** PINK BOX **/
 #pink_block{
-  background-color:#FF7869;
+  background-color:#1E1919;
   width: 100%;
-  height:500px;
+  height:400px;
   color:white;
-  text-align:center;
+  text-align:left;
 }
 
 #pink_block_content{
+	width:60%;
+	margin-left:20%;
+	text-align:center;
   position: relative;
   top: 50%;
   transform: translateY(-50%);
 }
 #pink_block a{
-  text-decoration:underline;
   color:white;
-  font-size:20px;
+  font-size:30px;
+  text-transform: uppercase;
 }
 
 .big_text2{
-  font-size: 75px;
-  text-align:center;
+  font-size: 35px;
+  margin-bottom:60px;
+  text-align:left;
   vertical-align:center;
 }
 /*END PINK BOX SECTION*/
@@ -751,7 +748,29 @@ text-align:left;
 		margin-left:15%;
 		display:flex;
 	}
-	
+	footer .collLayout{
+		
+}
+footer .collLayout{
+	width:70%;
+	margin-left:15%;
+	padding-top:50px;
+	padding-top:50px;
+	display: flex;
+	flex-direction: row;
+}
+
+footer .collLayout .coll{
+  width: 30%;
+  margin-bottom:100px;
+  border-bottom:none;
+}
+footer .coll:nth-child(2){
+  flex:1;
+  margin-left:5%;
+  margin-right:5%;
+}
+
 	
 /*Fancy bullet points*/
 	.fancy_drop_down_menu .dropDown{
@@ -1042,5 +1061,52 @@ p .projectsPage {
 
 /*SECTION ENDS*/
 
+/*
+.footer {
+    width: 100%;
+    margin-left:0;
+    background-color:#1E1919;
+    color:white;
+    display:block;
+}
+
+.fixed-col div{
+	display:inline-block;
+	
+}
+.varible-col {
+    display:none;
+}
+.wrap1{
+	width:100%;
+}
+
+.final-item{
+ padding-bottom:30px;
+}
+
+.fixed-col {
+    width:70%;
+    margin-left:15%;
+}
+
+/*Styles links*/
+/*
+.fixed-col a{
+  color:white;
+  text-decoration:none;
+  
+}
+
+.varible-col img{
+  max-width:200px; 
+  
+}
+
+footer{
+	width:100%;	
+	background-color:#1E1919;
+}   
+*/
 
 

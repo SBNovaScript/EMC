@@ -15,29 +15,16 @@
 ?>
 
 		</div><!-- #content -->
-
+		
+		<?php 
+		if(is_front_page() ) {
+			get_template_part( 'template-parts/page/content', 'contactBlock' );
+		}
+		
+		?>
 		<footer>
-			<div class="wrap1">
-				
-				
-				<div class="footer">
-<div class="fixed-col">
-	<h2><a href="#">Contact Us</a></h2>
-	
-	<?php echo get_theme_mod('contactText'); ?>
-	<!--
-		<a href="#">Ketri Tracy,</a> 
-		Busness devlopment manager, 
-		Emergent Media Center,
-        Champlain College<br> 
-      802-856-8438<br>
-      <a href ="#"> ktracy@champlain.edu</a>-->
-    </div>
-	
-	
-    <div class="varible-col">
-      <?php
-
+	  <?php
+				/*
 				if ( has_nav_menu( 'social' ) ) : ?>
 					<nav class="social-navigation" role="navigation" aria-label="<?php esc_attr_e( 'Footer Social Links Menu', 'twentyseventeen' ); ?>">
 						<?php
@@ -48,26 +35,32 @@
 								'link_before'    => '<span class="screen-reader-text">',
 								'link_after'     => '</span>' . twentyseventeen_get_svg( array( 'icon' => 'chain' ) ),
 							) );
+							*/
 						?>
+						
 					</nav><!-- .social-navigation -->
-					<?php endif;?>
-    </div>
+					<?php /*endif;*/?>
+	<div class="collLayout">
+		<div class="coll">
+		<?php echo get_theme_mod('footerCol1'); ?>
+		</div>
+		<div class="coll">
+		  <?php echo get_theme_mod('footerCol2'); ?>
+		</div>
+		<div class="coll">
+		  <?php echo get_theme_mod('footerCol3'); ?>
+		</div>
+	
+	</div>
+	
+	 
+	
+	
+	
     
-	
-    <div class="fixed-col final-item">
-    <h2><a href="#">Partnerships</a></h2>
-	<?php echo get_theme_mod('partnerText'); ?>
-	
-	<!--
-      <a href="#">Test test test test def</a>
-      <a href="#">Test test test test rff</a>
-      <a href="#">Test test test test test</a>
-      <a href="#">Test test test test stuff</a>
-	  
-	  -->
-    </div>
-</div> 
-			</div><!-- .wrap -->
+     
+    
+    
 		</footer><!-- #colophon -->
 	</div><!-- .site-content-contain -->
 </div><!-- #page -->
