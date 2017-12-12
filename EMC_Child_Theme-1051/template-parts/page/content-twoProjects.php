@@ -23,13 +23,7 @@ if(have_rows('two_field_repeater') ):
 		<span class="date">
 		
 		<?php if(get_sub_field('two_projects_date_one') != ""){
-			echo "(";
-		} ?>
-		
-		<?php the_sub_field('two_projects_date_one') ?>
-		
-		<?php if(get_sub_field('two_projects_date_one') != ""){
-			echo ")";
+			echo "(",the_sub_field('two_projects_date_one'),")";
 		} ?>
 		
 		</span></h1>
@@ -41,16 +35,8 @@ if(have_rows('two_field_repeater') ):
 		<h1> <?php the_sub_field('two_project_title_two') ?> <span class="date">
 		
 		<?php if(get_sub_field('two_projects_date_two') != ""){
-			echo "(";
-		}
-		?>
-		
-		<?php the_sub_field('two_projects_date_two') ?>
-		
-		<?php if(get_sub_field('two_projects_date_two') != ""){
-			echo ")";
-		}
-		?>
+			echo "(",the_sub_field('two_projects_date_two'),")";
+		} ?>
 		
 		</span></h1>
 		<p><?php the_sub_field('two_project_description_two') ?></p>

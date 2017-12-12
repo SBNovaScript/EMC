@@ -23,7 +23,16 @@ if(have_rows('four_field_repeater') ):
 			
 			<div class="two-projects-overlay">
 				<div class="two-projects-text">
-					<h1><?php the_sub_field('four_projects_title_one') ?> <span class="date">(<?php the_sub_field('four_projects_date_one') ?>)</span></h1>
+					<h1><?php the_sub_field('four_projects_title_one') ?> <span class="date">
+					
+					<?php if(get_sub_field('four_projects_date_one') != ""){
+						
+						echo "(",the_sub_field('four_projects_date_one'),")";
+						
+					} ?>
+					
+					
+					</span></h1>
 				</div>
 			</div>
 		  </div>
@@ -32,7 +41,15 @@ if(have_rows('four_field_repeater') ):
 			<img class="two-projects-img" src="<?php the_sub_field('four_projects_image_two') ?>">
 			<div class="two-projects-overlay">
 				<div class="two-projects-text">
-					<h1> <?php the_sub_field('four_projects_title_two') ?> <span class="date">(<?php the_sub_field('four_projects_date_two') ?>)</span></h1>
+					<h1> <?php the_sub_field('four_projects_title_two') ?> <span class="date">
+					
+					<?php if(get_sub_field('four_projects_date_two') != ""){
+						
+						echo "(",the_sub_field('four_projects_date_two'),")";
+						
+					} ?>
+					
+					</span></h1>
 				</div>
 			</div>
 		  </div>
