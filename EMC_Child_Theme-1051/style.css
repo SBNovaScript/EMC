@@ -573,6 +573,13 @@ text-align:left;
 	opacity:0;
 }
 
+@media only screen and (max-width: 769px) {
+	.fade-in-layout {
+		opacity:1;
+	}
+   
+}
+
 /*.projects-wrap{
 	margin-left:2.5% !important;
 	margin-right:5%
