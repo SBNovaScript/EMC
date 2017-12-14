@@ -32,15 +32,15 @@ This folder contains the javascript for a few cool visual effects.
 
 
 
-####/header
+#### /header
 Includes the site branding and header image for the custom header on the home page. 
 
-####/navigation - information about the pull out menu.  
+#### /navigation - information about the pull out menu.  
 navigation-top - The navigation menu for the home page (includes pull out menu and the javascript to make it work) 
 navigation -topSubpage - The navigation bar and pull out menu for subpages. 
 
 
-####/page:  
+#### /page:  
 
 content -contactBlock - This is not included from ACF. Rather it is included as part of the footer on the home page. It is essentially identical to the pink-block. It should probably be moved to /footer at some point
 
