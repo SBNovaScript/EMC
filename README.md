@@ -8,6 +8,9 @@ Designer: Pete Moore
 
 http://mainsitetest.emergentmediacenter.com/
 
+Please visit this google doc to read this document with images in it
+https://docs.google.com/document/d/1PbmVPmppM4BazYOVRcYPGP416mnh2gOTgv0jMGsOAfQ/edit?usp=sharing
+
 This is the GitHub EMC Website repository. All theme files can be found under the main "EMC_Child_Theme-1051" folder. 
 
 #### Main template-parts:  
