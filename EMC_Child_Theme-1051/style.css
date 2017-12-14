@@ -58,6 +58,7 @@ Graveyard of dead code
 	The code that uste to make my beautiful underlined words on mission statement block
 	The code that made the old slightly broken footer
 
+	To the next devloper
 **************************************************************************************************/
 
 /**Background image**/
@@ -180,7 +181,7 @@ Graveyard of dead code
 	border-bottom:none;
 	border-top:none;
 	bottom:auto; /*Makes the nav bar on the home page appear at top (it was bottom 0 keeping it in place so this overrides it*/
-	z-index:1;
+	z-index:4;
 	margin-top:-20px;
 }
 .slideOutIcon{
@@ -213,6 +214,11 @@ Graveyard of dead code
 .sub-page-header{
 	margin-top:0px;
 }
+
+.site-branding{
+	z-index:2;
+}
+
 /*END NAV SECTION*/
 
 /** FOOTER CSS **/
@@ -267,6 +273,13 @@ footer .collLayout .coll:nth-child(3){
 #wp-custom-header-video-button {
     display: none;
   }
+  .wp-custom-header .wp-custom-header-video-button {
+    left: -999em;
+}
+
+.custom-header{
+	display:none;
+}
   
 /*END HOME PAGE VIEO SECTION*/
 
@@ -307,7 +320,9 @@ footer .collLayout .coll:nth-child(3){
 
 .big_text{
 	color:black;
-	font-size: 75px;
+	font-size: 26px;
+	font-weight:bold;
+	text-align:left;
 }
 
 /*END WORD BAR SECTION/
@@ -322,8 +337,8 @@ footer .collLayout .coll:nth-child(3){
 }
 
 #pink_block_content{
-	width:60%;
-	margin-left:20%;
+	width:90%;
+	margin-left:5%;
 	text-align:center;
   position: relative;
   top: 50%;
@@ -336,10 +351,11 @@ footer .collLayout .coll:nth-child(3){
 }
 
 .big_text2{
-  font-size: 35px;
+  font-size: 36px;
   margin-bottom:60px;
   text-align:left;
   vertical-align:center;
+  font-weight:bold;
 }
 /*END PINK BOX SECTION*/
 
@@ -748,6 +764,9 @@ text-align:left;
 	.subPage .slideOutIcon{
 		margin-left: -15px;
 	}
+	.custom-header{
+		display:block;
+	}
 
 /*Footer*/
 	.footer {
@@ -1115,5 +1134,14 @@ footer{
 	background-color:#1E1919;
 }   
 */
-
+/*
+Dear new devloper,
+Welvome to the EMC! If you are reading this I have moved to the stern project (or am dead). If I am on the stern project feel free to ask me a million questions. I know this project/code is a bit of a mess but 
+I've done the best I can to refactor and reorginse it so the transision will be smooth. This project has been messy with changing targets etc so there is a lot of things that are legicy 
+that we never had the heart to deleate. I am sorry for leaving you to clean this up. If it seems like I was crazy to do something its becouse this code base is crazy. There is a solid chance that 
+removing something seemingly harmless will break everything. Luckly we are using version control so if we mess it all up you can aloyes restore your old code. 
+Good luck and have fun
+Amelia
+P.S This project has a selection of really nasty mobile bugs. Jen and others will tell you to ignore them but don't. Its more important that the website works period on mobile then that the font is just perfict on desktop. 
+*/
 
